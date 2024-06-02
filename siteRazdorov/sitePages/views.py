@@ -22,3 +22,10 @@ class NewsPage(View):
 
     def get(self, request):
         return render(request, self.template_name)
+
+class ContactsPage(View):
+    """ Страница 'Новости' """
+    template_name = 'pages/contacts.html'
+
+    def get(self, request):
+        return render(request, self.template_name)

@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<main class="page">
+			<nav class="breadcrumbs">
+				<div class="breadcrumbs__container">
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__item"><a href="/" class="breadcrumbs__link">Главная</a></li>
+						<li class="breadcrumbs__item"><span class="breadcrumbs__current">Контакты</span>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<div class="contacts-page section-top section-bottom">
+				<div class="contacts-page__container">
+					<div class="contacts-page__info">
+						<div class="contacts-page-item">
+							<div class="contacts-page-item__label">Выберите офис</div>
+							<div class="select select_city _select-active" data-id="1"><select name="form[]" data-class-modif="city" hidden="" data-id="1" data-speed="150">
+								<option value="1" selected="">Ростов-на-Дону</option>
+								<option value="2">Москва</option>
+								<option value="3">Санкт-Петербург</option>
+							</select><div class="select__body"><button type="button" class="select__title"><span class="select__value"><span class="select__content">Ростов-на-Дону</span></span></button><div hidden="" class="select__options"><div class="select__scroll"><button hidden="" class="select__option" data-value="1" type="button">Ростов-на-Дону</button><button class="select__option" data-value="2" type="button">Москва</button><button class="select__option" data-value="3" type="button">Санкт-Петербург</button></div></div></div></div>
+						</div>
+						<div class="contacts-page-item">
+							<div class="contacts-page-item__label">Номер телефона</div>
+							<a class="contacts-page__text" href="tel:+78006005668">+7 800 600 56 68</a>
+						</div>
+						<div class="contacts-page-item">
+							<div class="contacts-page-item__label">Наша почта</div>
+							<a class="contacts-page__text" href="mailto:info@bfl.ru">info@bfl.ru</a>
+						</div>
+						<div class="contacts-page-item">
+							<div class="contacts-page-item__label">Адрес офиса</div>
+							<div class="contacts-page__text">ул. Жуковского д. 25, под. 5, оф. 29</div>
+							<small>Пн - Пт с 9:00 до 18:00</small>
+						</div>
+					</div>
+					<div class="contacts-page__map">
+						<div class="map map_active -ibg" data-map="1">
+							<picture>
+								<source media="(min-width: 479.98px)" srcset="{% static 'img/map/rostov.svg' %}">
+								<img src="{% static 'img/map/rostov_m.svg' %}" alt="Image">
+							</picture>
+						</div>
+						<div class="map -ibg" data-map="2" hidden="">
+							<picture>
+								<source media="(min-width: 479.98px)" srcset="{% static 'img/map/moscow.svg' %}">
+								<img src="{% static 'img/map/moscow_m.svg' %}" alt="Image">
+							</picture>
+						</div>
+						<div class="map -ibg" data-map="3" hidden="">
+							<picture>
+								<source media="(min-width: 479.98px)" srcset="{% static 'img/map/spb.svg' %}">
+								<img src="{% static 'img/map/spb_m.svg' %}" alt="Image">
+							</picture>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			{% include 'inc/chunks/_quiz.html' %}
+
+		</main>
+{% endblock %}
