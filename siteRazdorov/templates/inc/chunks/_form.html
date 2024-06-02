@@ -1,0 +1,35 @@
+{% load static %}
+<section class="consultation section-bottom">
+				<div class="consultation__container">
+					<div class="consultation__inner">
+						<img src="{% static 'img/cons-img.jpg' %}" alt="Image" class="consultation__img">
+						<h2 class="consultation__title title color-white">Закажите бесплатную консультацию</h2>
+						<div class="consultation__text text">Мы свяжемся с вами и ответим на все интересующие вопросы</div>
+						<form action="#" class="form">
+							<div class="form__row">
+								<div class="form__column">
+									<label class="form__label" for="c-name">Имя*</label>
+									<div class="form__input">
+										<input class="input" autocomplete="off" id="c-name" type="text" placeholder="Иван">
+									</div>
+								</div>
+							</div>
+							<div class="form__row">
+								<div class="form__column">
+									<label class="form__label" for="c-tel">Номер телефона*</label>
+									<div class="form__input">
+										<input class="input" autocomplete="off" id="c-tel" type="text" placeholder="+7 999 999 99 99">
+									</div>
+								</div>
+								<div class="form__text">
+									Нажимая на кнопку “Заказать звонок” я даю согласие на&nbsp;обработку <a href="">персональных
+										данных</a>
+								</div>
+							</div>
+							<div class="form__row ">
+								<button class="form__button button button_white" type="submit">Заказать звонок</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>

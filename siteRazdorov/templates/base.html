@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	{% block head %}
+	{% include 'inc/_head.html' %}
+	{% endblock %}
+</head>
+
+<body>
+	<div class="wrapper">
+		{% block header %}
+			{% include 'inc/_header.html' %}
+		{% endblock %}
+
+
+		{% block content %}
+		{% endblock %}
+
+		{% block footer %}
+			{% include 'inc/_footer.html' %}
+		{% endblock %}
+
+
+	</div>
+	<div id="call" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<img src="{% static 'img/icons/close.svg' %}" alt="Image">
+				</button>
+				<div class="popup__text">
+					<div class="popup-inner">
+						<div class="popup-inner__title title">Нужна консультация?</div>
+						<div class="popup-inner__text">
+							Оставьте свой номер телефона и наш менеджер ответит на&nbsp;все ваши вопросы в&nbsp;самое
+							ближайшее
+							время
+						</div>
+						<form action="#" class="form">
+							<div class="form__row">
+								<div class="form__column">
+									<label class="form__label" for="p-name">Имя*</label>
+									<div class="form__input">
+										<input class="input" autocomplete="off" id="p-name" type="text" placeholder="Иван">
+									</div>
+								</div>
+							</div>
+							<div class="form__row">
+								<div class="form__column">
+									<label class="form__label" for="p-tel">Номер телефона*</label>
+									<div class="form__input">
+										<input class="input" autocomplete="off" id="p-tel" type="text" placeholder="+7 999 999 99 99">
+									</div>
+								</div>
+								<div class="form__text">
+									Нажимая на кнопку “Заказать звонок” я даю согласие на&nbsp;обработку <a href="">персональных
+										данных</a>
+								</div>
+							</div>
+							<div class="form__row ">
+								<button class="form__button button" type="submit">Заказать звонок</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	{% block scripts %}
+	{% include 'inc/_scripts.html' %}
+	{% endblock %}
+</body>
+
+</html>

@@ -1,0 +1,514 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<main class="page">
+			<section class="hero">
+				<div class="hero__container">
+					<div class="hero__content">
+						<h1 class="hero__title">Оформите <span>банкротство физических лиц от 6 000 ₽ в&nbsp;месяц</span> за
+							8-10 месяцев с&nbsp;гарантией списания долгов по договору</h1>
+						<ul class="hero__list">
+							<li>Без посещения судов и сбора документов Мы делаем все за вас!</li>
+							<li>Законно сохраняем все имущество</li>
+						</ul>
+					</div>
+					<div class="hero__form">
+						<div class="hero__form-title">
+							Узнайте, подходит ли процедура банкротства в&nbsp;вашем случае
+						</div>
+						<form action="#" class="form">
+							<div class="form__row">
+								<div class="form__column">
+									<label class="form__label" for="name">Ваше имя<span>*</span></label>
+									<div class="form__input">
+										<input class="input" autocomplete="off" id="name" type="text" placeholder="Иван">
+									</div>
+								</div>
+							</div>
+							<div class="form__row">
+								<div class="form__column">
+									<label class="form__label" for="tel">Номер телефона<span>*</span></label>
+									<div class="form__input">
+										<input class="input" autocomplete="off" id="tel" type="text" placeholder="+7 999 999 99 99">
+									</div>
+								</div>
+							</div>
+							<div class="form__row">
+								<div class="form__column">
+									<label class="form__label">Сумма долга<span>*</span></label>
+									<select name="form[]" data-class-modif="debt">
+										<option value="1" selected>250 000 ₽ - 500 000 ₽</option>
+										<option value="2">Пункт2</option>
+										<option value="3">Пункт3</option>
+										<option value="4">Пункт4</option>
+									</select>
+								</div>
+								<div class="form__text">
+									Нажимая на кнопку “Узнать” я даю согласие на&nbsp;обработку <a href="">персональных
+										данных</a>
+								</div>
+							</div>
+							<div class="form__row ">
+								<button class="form__button button" type="submit">Узнать</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+			<section class="why section-padding">
+				<div class="why__container">
+					<div class="content-block">
+						<div class="content-block__left">
+							<div class="content-block__line"></div>
+						</div>
+						<div class="content-block__info">
+							<h2 class="content-block__title title">Почему выбирают нас?</h2>
+							<div class="why-items">
+								<div class="why-items__item">
+									<img src="{% static 'img/icons/why/01.svg' %}" alt="Image">
+									<strong>Рассрочка без процентов до&nbsp;12 месяцев</strong>
+								</div>
+								<div class="why-items__item">
+									<img src="{% static 'img/icons/why/02.svg' %}" alt="Image">
+									<strong>Полное сопровождение во&nbsp;время процедуры</strong>
+								</div>
+								<div class="why-items__item">
+									<img src="{% static 'img/icons/why/03.svg' %}" alt="Image">
+									<strong>Гарантия на полное списание долгов в&nbsp;договоре</strong>
+								</div>
+								<div class="why-items__item">
+									<img src="{% static 'img/icons/why/04.svg' %}" alt="Image">
+									<strong>Большой штат опытных юристов</strong>
+								</div>
+								<div class="why-items__item">
+									<img src="{% static 'img/icons/why/05.svg' %}" alt="Image">
+									<strong>500 + выигранных дел</strong>
+								</div>
+								<div class="why-items__item">
+									<img src="{% static 'img/icons/why/06.svg' %}" alt="Image">
+									<strong>Крупнейшая компания в РФ</strong>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="call-us section-bottom">
+				<div class="call-us__container">
+					<div class="call-us__inner">
+						<h2 class="title color-white">Позвоните нам прямо сейчас и получите консультацию юриста и&nbsp;полный
+							разбор вашего
+							дела бесплатно!</h2>
+						<div class="call-us__block">
+							<a href="tel:+78006006568" class="call-us__tel">+7 800 600 65 68</a>
+							<small>Свободных юристов на линии: 2</small>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="instruction section-bottom">
+				<div class="instruction__container">
+					<div class="content-block">
+						<div class="content-block__left">
+							<div class="content-block__line"></div>
+							<div class="company-leader" data-da=".instruction .content-block__info, 991.98,1">
+
+								<picture>
+									<source media="(min-width: 479.98px)" srcset="{% static 'img/leader.jpg' %}">
+									<img src="{% static 'img/leader_m.jpg' %}" alt="Image">
+								</picture>
+
+								<div class="company-leader__info">
+									<strong>Антон Раздоров</strong>
+									<small>директор компании</small>
+									<div class="company-leader__text">
+										“Я лично отвечаю за результат наших услуг и все гарантии, которые мы даем!”
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="content-block__info">
+							<h2 class="content-block__title title">Пошаговая инструкция по банкротству физических лиц</h2>
+							<div class="content-block__text text">Банкротство физических лиц — это юридический процесс,
+								который
+								позволяет лицу, находящемуся в финансовых трудностях, получить защиту от кредиторов и решить
+								свои долги. Процедуры включает в себя следующий процесс.
+							</div>
+							<div data-showmore="items" class="showmore">
+								<ol data-showmore-content="7" class="showmore__content text" start="1">
+									<li><strong>Консультация с адвокатом:</strong> Адвокат поможет вам понять, подходите ли
+										вы для этой
+										процедуры и какие виды банкротства доступны в вашей стране.
+									</li>
+									<li><strong>Подготовка документов:</strong> Чтобы адвокату правильно заполнить
+										заявление, вам
+										потребуется собрать и подготовить необходимые документы, включая информацию о
+										вашей финансовой ситуации.
+									</li>
+									<li><strong>Заявление о банкротстве:</strong> Адвокат поможет вам подготовить и подать
+										заявление о
+										банкротстве в суд.
+									</li>
+									<li><strong>Автоматическое уведомление кредиторов:</strong> После подачи заявления о
+										банкротстве, суд
+										автоматически уведомит ваших кредиторов о начале процедуры.
+									</li>
+									<li><strong>Судебное слушание:</strong> Суд назначит слушание, на котором будет
+										рассматриваться ваше
+										дело. Вам и вашему адвокату нужно будет предоставить информацию о вашей фолио,
+										доходах и расходах.
+									</li>
+									<li><strong>Утверждение плана банкротства:</strong> В зависимости от результатов
+										слушания, суд может
+										утвердить план банкротства. Этот план может включать в себя определенные
+										условия, такие как продажа активов, выплаты кредиторам и другие меры.
+									</li>
+									<li><strong>Наблюдение и завершение процедуры:</strong> Вам придется следовать
+										утвержденному плану
+										банкротства и соблюдать все судебные решения. По завершении процедуры, суд может
+										объявить вас официально банкротом, и вы можете быть освобождены от оставшихся
+										долгов.
+									</li>
+									<li><strong>Консультация с адвокатом:</strong> Адвокат поможет вам понять, подходите ли
+										вы для этой
+										процедуры и какие виды банкротства доступны в вашей стране.
+									</li>
+									<li><strong>Подготовка документов:</strong> Чтобы адвокату правильно заполнить
+										заявление, вам
+										потребуется собрать и подготовить необходимые документы, включая информацию о
+										вашей финансовой ситуации.
+									</li>
+									<li><strong>Заявление о банкротстве:</strong> Адвокат поможет вам подготовить и подать
+										заявление о
+										банкротстве в суд.
+									</li>
+									<li><strong>Автоматическое уведомление кредиторов:</strong> После подачи заявления о
+										банкротстве, суд
+										автоматически уведомит ваших кредиторов о начале процедуры.
+									</li>
+									<li><strong>Судебное слушание:</strong> Суд назначит слушание, на котором будет
+										рассматриваться ваше
+										дело. Вам и вашему адвокату нужно будет предоставить информацию о вашей фолио,
+										доходах и расходах.
+									</li>
+								</ol>
+								<button hidden data-showmore-button type="button" class="showmore__more button button_outline"><span>Прочитать статью полностью</span><span>Скрыть</span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="video-home section-bottom">
+				<div class="video-home__container">
+					<div class="video-block">
+						<div class="video-block__value">
+							<div class="video-block__inner">
+								<picture>
+									<source srcset='https:\\img.youtube.com/vi_webp/IBwIbaGlplU/maxresdefault.webp' type="image/webp">
+									<img src="https:\\img.youtube.com/vi/IBwIbaGlplU/maxresdefault.jpg" alt="Image">
+								</picture>
+								<button class="video-btn" type="button" data-video-id="IBwIbaGlplU">
+									<svg height="100%" viewBox="0 0 54 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M51.4824 26.6679C54.8205 28.5914 54.8205 33.4086 51.4824 35.3322L7.49649 60.68C4.16316 62.6009 2.10425e-07 60.195 3.78906e-07 56.3478L2.59903e-06 5.65216C2.76752e-06 1.80496 4.16316 -0.60089 7.4965 1.32001L51.4824 26.6679Z" />
+									</svg>
+									<span class="video-btn__text">
+										Смотреть видео
+									</span>
+								</button>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<section class="cases-main section-bottom">
+				<div class="cases-main__container">
+					<div class="content-block _slider">
+						<div class="content-block__left">
+							<div class="content-block__line"></div>
+							<div class="swiper-controls">
+								<button type="button" class="cases-main-btn-prev swiper-button swiper-button-prev _icon-dropdown">
+
+								</button>
+								<button type="button" class="cases-main-btn-next swiper-button swiper-button-next _icon-dropdown">
+
+								</button>
+							</div>
+
+						</div>
+						<div class="content-block__info">
+							<h2 class="content-block__title title">Выигранные дела</h2>
+							<div class="cases-main__body swiper">
+								<div class="cases-main__wrapper swiper-wrapper">
+									<div class="cases-main__slide swiper-slide">
+										<div class="case-item">
+											<a class="case-item__img -ibg" href="{% static 'img/cases/01/01.jpg' %}" data-gallery>
+												<img src="{% static 'img/cases/01/01.jpg' %}" alt="Image">
+											</a>
+											<div class="case-item__info">
+												<div class="info-item-items">
+													<div class="info-item">
+														<div class="info-item__label text">Клиент:</div>
+														<div class="info-item__value title-subtitle">
+															<span>Иванов Иван Иванович</span>
+															<span>Иванов И.И.</span>
+														</div>
+													</div>
+													<div class="info-item">
+														<div class="info-item__label text">Сумма долга:</div>
+														<div class="info-item__value red-gradient title title_h3">1 238 000
+															₽
+														</div>
+													</div>
+													<div class="info-item">
+														<div class="info-item__label text">Статус:</div>
+														<div class="info-item__value title-subtitle">Списан</div>
+													</div>
+													<div class="info-item">
+														<div class="info-item__label text">Срок процедуры:</div>
+														<div class="info-item__value title-subtitle">10 месяцев</div>
+													</div>
+													<div class="info-item">
+														<div class="info-item__label text">Количество кредиторов:</div>
+														<div class="info-item__value title-subtitle">3</div>
+													</div>
+													<div class="info-item">
+														<div class="info-item__label text">Номер дела:</div>
+														<div class="info-item__value title-subtitle">№А53-42933/2019</div>
+													</div>
+												</div>
+												<div class="case-item__down">
+													<a href="">
+														<img src="{% static 'img/icons/pdf.svg' %}" width="35" height="36" alt="Image">
+														Скачать <br> определение
+													</a>
+												</div>
+												<div class="case-item__action">
+													<a href="" class="case-item__btn button button_outline">Посмотреть все
+														дела</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="cases-main__slide swiper-slide">
+										<div class="case-item">
+											<a class="case-item__img -ibg" href="{% static 'img/cases/01/01.jpg' %}" data-gallery>
+												<img src="img/cases/01/01.jpg" alt="Image">
+											</a>
+											<div class="case-item__info">
+												<div class="info-item-items">
+													<div class="info-item">
+														<div class="info-item__label text">Клиент:</div>
+														<div class="info-item__value title-subtitle">
+															<span>Иванов Иван Иванович</span>
+															<span>Иванов И.И.</span>
+														</div>
+													</div>
+													<div class="info-item">
+														<div class="info-item__label text">Сумма долга:</div>
+														<div class="info-item__value red-gradient title title_h3">1 238 000
+															₽
+														</div>
+													</div>
+													<div class="info-item">
+														<div class="info-item__label text">Статус:</div>
+														<div class="info-item__value title-subtitle">Списан</div>
+													</div>
+													<div class="info-item">
+														<div class="info-item__label text">Срок процедуры:</div>
+														<div class="info-item__value title-subtitle">10 месяцев</div>
+													</div>
+													<div class="info-item">
+														<div class="info-item__label text">Количество кредиторов:</div>
+														<div class="info-item__value title-subtitle">3</div>
+													</div>
+													<div class="info-item">
+														<div class="info-item__label text">Номер дела:</div>
+														<div class="info-item__value title-subtitle">№А53-42933/2019</div>
+													</div>
+												</div>
+												<div class="case-item__down">
+													<a href="">
+														<img src="{% static 'img/icons/pdf.svg' %}" width="35" height="36" alt="Image">
+														Скачать <br> определение
+													</a>
+												</div>
+												<div class="case-item__action">
+													<a href="" class="case-item__btn button button_outline">Посмотреть все
+														дела</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="cases-main__slide swiper-slide">
+										<div class="case-item">
+											<a class="case-item__img -ibg" href="{% static 'img/cases/01/01.jpg' %}" data-gallery>
+												<img src="{% static 'img/cases/01/01.jpg' %}" alt="Image">
+											</a>
+											<div class="case-item__info">
+												<div class="info-item-items">
+													<div class="info-item">
+														<div class="info-item__label text">Клиент:</div>
+														<div class="info-item__value title-subtitle">
+															<span>Иванов Иван Иванович</span>
+															<span>Иванов И.И.</span>
+														</div>
+													</div>
+													<div class="info-item">
+														<div class="info-item__label text">Сумма долга:</div>
+														<div class="info-item__value red-gradient title title_h3">1 238 000
+															₽
+														</div>
+													</div>
+													<div class="info-item">
+														<div class="info-item__label text">Статус:</div>
+														<div class="info-item__value title-subtitle">Списан</div>
+													</div>
+													<div class="info-item">
+														<div class="info-item__label text">Срок процедуры:</div>
+														<div class="info-item__value title-subtitle">10 месяцев</div>
+													</div>
+													<div class="info-item">
+														<div class="info-item__label text">Количество кредиторов:</div>
+														<div class="info-item__value title-subtitle">3</div>
+													</div>
+													<div class="info-item">
+														<div class="info-item__label text">Номер дела:</div>
+														<div class="info-item__value title-subtitle">№А53-42933/2019</div>
+													</div>
+												</div>
+												<div class="case-item__down">
+													<a href="">
+														<img src="{% static 'img/icons/pdf.svg' %}" width="35" height="36" alt="Image">
+														Скачать <br> определение
+													</a>
+												</div>
+												<div class="case-item__action">
+													<a href="" class="case-item__btn button button_outline">Посмотреть все
+														дела</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cases-main__action">
+								<a href="" class="cases-main__btn button button_outline">Посмотреть все дела</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			{% include 'inc/chunks/_quiz.html' %}
+
+			<section class="services section-bottom">
+				<div class="services__container">
+					<div class="content-block">
+						<div class="content-block__left">
+							<div class="content-block__line"></div>
+							<div class="text text_xl" data-da=".services .content-block__info, 767.98,1">Мы проводим не только процедуру банкротства, но и предлагаем спектр определенных
+								<a href="">юридических услуг</a>
+							</div>
+						</div>
+						<div class="content-block__info">
+							<h2 class="content-block__title title">Наши услуги</h2>
+							<div class="services-items">
+								<div class="item-service">
+									<a href="" class="stretched-link"></a>
+									<div class="item-service__title">Банкротство физических лиц</div>
+									<div class="item-service__link _icon-ar-right">Подробнее</div>
+								</div>
+								<div class="item-service">
+									<a href="" class="stretched-link"></a>
+									<div class="item-service__title">Защита от коллекторов</div>
+									<div class="item-service__link _icon-ar-right">Подробнее</div>
+								</div>
+								<div class="item-service">
+									<a href="" class="stretched-link"></a>
+									<div class="item-service__title">Работа с приставами, ФНС (и другими гос. органами)</div>
+									<div class="item-service__link _icon-ar-right">Подробнее</div>
+								</div>
+								<div class="item-service">
+									<a href="" class="stretched-link"></a>
+									<div class="item-service__title">Составление договоров, исков, ведение дел в судах</div>
+									<div class="item-service__link _icon-ar-right">Подробнее</div>
+								</div>
+								<div class="item-service">
+									<a href="" class="stretched-link"></a>
+									<div class="item-service__title">Отмена судебных приказов</div>
+									<div class="item-service__link _icon-ar-right">Подробнее</div>
+								</div>
+								<div class="item-service">
+									<a href="" class="stretched-link"></a>
+									<div class="item-service__title">Развод и раздел имущества (Семейное право)</div>
+									<div class="item-service__link _icon-ar-right">Подробнее</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="blog-main section-bottom">
+				<div class="blog-main__container">
+					<div class="content-block _slider">
+						<div class="content-block__left">
+							<div class="content-block__line"></div>
+							<div class="swiper-controls">
+								<button type="button" class="blog-main-btn-prev swiper-button swiper-button-prev _icon-dropdown">
+
+								</button>
+								<button type="button" class="blog-main-btn-next swiper-button swiper-button-next _icon-dropdown">
+
+								</button>
+							</div>
+
+						</div>
+						<div class="content-block__info">
+							<h2 class="content-block__title title">Свежие статьи и новости</h2>
+							<div class="blog-main__body swiper">
+								<div class="blog-main__wrapper swiper-wrapper">
+									<div class="blog-main__slide swiper-slide">
+										<div class="blog-item" style="background-image: url({% static 'img/blog/01.jpg' %})">
+											<div class="blog-item__title title title_h3">
+												Какую карту завести, чтобы ее не арестовали судебные приставы?
+											</div>
+											<div class="blog-item__overlay">
+												<a href="" class="blog-item__btn button">Читать</a>
+											</div>
+										</div>
+									</div>
+									<div class="blog-main__slide swiper-slide">
+										<div class="blog-item" style="background-image: url({% static 'img/blog/02.jpg' %})">
+											<div class="blog-item__title title title_h3">
+												Банкротство физ. лиц. <br> Как избавиться от долгов по&nbsp;закону
+											</div>
+											<div class="blog-item__overlay">
+												<a href="" class="blog-item__btn button">Читать</a>
+											</div>
+										</div>
+									</div>
+									<div class="blog-main__slide swiper-slide">
+										<div class="blog-item" style="background-image: url({% static 'img/blog/02.jpg' %})">
+											<div class="blog-item__title title title_h3">
+												Банкротство физ. лиц. Как избавиться от долгов по закону
+											</div>
+											<div class="blog-item__overlay">
+												<a href="" class="blog-item__btn button">Читать</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="blog-main__action">
+								<a href="" class="blog-main__btn button button_outline">Читать больше статей</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+{% endblock %}

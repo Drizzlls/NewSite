@@ -1,0 +1,183 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<main class="page">
+			<nav class="breadcrumbs">
+				<div class="breadcrumbs__container">
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Главная</a></li>
+						<li class="breadcrumbs__item"><span class="breadcrumbs__current">О нас</span>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<section class="about-us section-top section-bottom">
+				<div class="about-us__container">
+					<div class="content-block">
+						<div class="content-block__left">
+							<div class="content-block__line"></div>
+							<div class="company-leader" data-da=".about-us .content-block__info, 991.98,1">
+
+								<picture>
+									<source media="(min-width: 479.98px)" srcset="{% static 'img/leader.jpg' %}">
+									<img src="{% static 'img/leader_m.jpg' %}" alt="Image">
+								</picture>
+
+								<div class="company-leader__info">
+									<strong>Антон Раздоров</strong>
+									<small>директор компании</small>
+									<div class="company-leader__text">
+										“Я лично отвечаю за результат наших услуг и все гарантии, которые мы даем!”
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="content-block__info">
+							<h2 class="content-block__title title">о нас</h2>
+							<div class="content-block__text text">
+								<p>Мы — команда опытных юристов и специалистов по финансовым
+									вопросам, которые посвятили свою деятельность помощи физическим лицам справиться с
+									финансовыми трудностями через процедуру банкротства.</p>
+								<p>
+									<strong class="title title_h5">Наша миссия</strong>
+									Нашей главной целью является предоставление нашим клиентам качественных юридических
+									услуг в области банкротства, сделанных на мере их потребностей. Мы понимаем, что каждая
+									ситуация уникальна, и подходим к каждому клиенту с особой заботой и вниманием.
+								</p>
+								<p>
+									<strong class="title title_h5">Профессионализм и опыт</strong>
+									Наши юристы обладают богатым опытом в сфере банкротства физических лиц и имеют глубокие
+									знания в области соответствующего законодательства. Этот опыт позволяет нам эффективно
+									решать самые сложные ситуации и обеспечивать клиентов необходимой защитой и поддержкой.
+								</p>
+								<p>
+									<strong class="title title_h5">Личный подход</strong>
+									Мы понимаем, что банкротство — это серьезный шаг, и нередко сопровождается финансовым и
+									эмоциональным стрессом. Поэтому мы всегда работаем индивидуально с каждым клиентом. Наши
+									юристы прослушивают ваши потребности, обсуждают ваши цели и помогают вам разработать
+									стратегию, которая наилучшим образом соответствует вашей ситуации.
+								</p>
+								<p>
+									<strong class="title title_h5">Поддержка на каждом этапе</strong>
+									Мы не просто предоставляем юридические услуги, мы на вашей стороне на протяжении всего
+									процесса банкротства. Наша цель — обеспечить вам максимальный комфорт и уверенность в
+									каждом шаге, пока вы не достигнете финансовой свободы.
+								</p>
+								<p>Если вы столкнулись с финансовыми проблемами и ищете надежного партнера на пути к
+									решению, обратитесь к нам. Мы готовы помочь вам справиться с трудностями, восстановить
+									финансовое благополучие и начать новую главу в вашей жизни. Свяжитесь с нами сегодня, и
+									давайте вместе сделаем первый шаг к вашей финансовой свободе.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="video-gallery section-bottom">
+				<div class="video-gallery__container">
+					<div class="content-block">
+						<div class="content-block__left">
+							<div class="content-block__line"></div>
+						</div>
+						<div class="content-block__info">
+							<h2 class="content-block__title title">смотрите всю информацию о банкротстве на нашем youtube
+								канале</h2>
+							<div class="content-block__text title title_h3">
+								За нами следят более <span>43,2&nbsp;тысячи</span> подписчиков
+							</div>
+							<div class="video-gallery__items">
+								<div class="video-block">
+									<div class="video-block__value">
+										<div class="video-block__inner">
+											<picture>
+												<source srcset="https:\\img.youtube.com/vi_webp/IBwIbaGlplU/maxresdefault.webp" type="image/webp">
+												<img src="https:\\img.youtube.com/vi/IBwIbaGlplU/maxresdefault.jpg" alt="Image">
+											</picture>
+											<button class="video-btn" type="button" data-video-id="IBwIbaGlplU">
+												<svg height="100%" viewBox="0 0 54 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M51.4824 26.6679C54.8205 28.5914 54.8205 33.4086 51.4824 35.3322L7.49649 60.68C4.16316 62.6009 2.10425e-07 60.195 3.78906e-07 56.3478L2.59903e-06 5.65216C2.76752e-06 1.80496 4.16316 -0.60089 7.4965 1.32001L51.4824 26.6679Z"></path>
+												</svg>
+												<span class="video-btn__text">
+													Смотреть видео
+												</span>
+											</button>
+										</div>
+									</div>
+								</div>
+
+								<div class="video-block">
+									<div class="video-block__value">
+										<div class="video-block__inner">
+											<picture>
+												<source srcset="https:\\img.youtube.com/vi_webp/IBwIbaGlplU/maxresdefault.webp" type="image/webp">
+												<img src="https:\\img.youtube.com/vi/IBwIbaGlplU/maxresdefault.jpg" alt="Image">
+											</picture>
+											<button class="video-btn" type="button" data-video-id="IBwIbaGlplU">
+												<svg height="100%" viewBox="0 0 54 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M51.4824 26.6679C54.8205 28.5914 54.8205 33.4086 51.4824 35.3322L7.49649 60.68C4.16316 62.6009 2.10425e-07 60.195 3.78906e-07 56.3478L2.59903e-06 5.65216C2.76752e-06 1.80496 4.16316 -0.60089 7.4965 1.32001L51.4824 26.6679Z"></path>
+												</svg>
+												<span class="video-btn__text">
+													Смотреть видео
+												</span>
+											</button>
+										</div>
+									</div>
+								</div>
+
+								<div class="video-block">
+									<div class="video-block__value">
+										<div class="video-block__inner">
+											<picture>
+												<source srcset="https:\\img.youtube.com/vi_webp/IBwIbaGlplU/maxresdefault.webp" type="image/webp">
+												<img src="https:\\img.youtube.com/vi/IBwIbaGlplU/maxresdefault.jpg" alt="Image">
+											</picture>
+											<button class="video-btn" type="button" data-video-id="IBwIbaGlplU">
+												<svg height="100%" viewBox="0 0 54 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M51.4824 26.6679C54.8205 28.5914 54.8205 33.4086 51.4824 35.3322L7.49649 60.68C4.16316 62.6009 2.10425e-07 60.195 3.78906e-07 56.3478L2.59903e-06 5.65216C2.76752e-06 1.80496 4.16316 -0.60089 7.4965 1.32001L51.4824 26.6679Z"></path>
+												</svg>
+												<span class="video-btn__text">
+													Смотреть видео
+												</span>
+											</button>
+										</div>
+									</div>
+								</div>
+
+								<div class="video-block">
+									<div class="video-block__value">
+										<div class="video-block__inner">
+											<picture>
+												<source srcset="https:\\img.youtube.com/vi_webp/IBwIbaGlplU/maxresdefault.webp" type="image/webp">
+												<img src="https:\\img.youtube.com/vi/IBwIbaGlplU/maxresdefault.jpg" alt="Image">
+											</picture>
+											<button class="video-btn" type="button" data-video-id="IBwIbaGlplU">
+												<svg height="100%" viewBox="0 0 54 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M51.4824 26.6679C54.8205 28.5914 54.8205 33.4086 51.4824 35.3322L7.49649 60.68C4.16316 62.6009 2.10425e-07 60.195 3.78906e-07 56.3478L2.59903e-06 5.65216C2.76752e-06 1.80496 4.16316 -0.60089 7.4965 1.32001L51.4824 26.6679Z"></path>
+												</svg>
+												<span class="video-btn__text">
+													Смотреть видео
+												</span>
+											</button>
+										</div>
+									</div>
+								</div>
+
+							</div>
+							<div class="content-block__action">
+								<a href="https://www.youtube.com/@razdorov_company" class="content-block__btn button button_outline">Перейти на Youtube канал</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			{% include 'inc/chunks/_quiz.html' %}
+
+			{% include 'inc/chunks/_cases.html' %}
+			{% include 'inc/chunks/_form.html' %}
+
+
+
+
+		</main>
+
+{% endblock %}
