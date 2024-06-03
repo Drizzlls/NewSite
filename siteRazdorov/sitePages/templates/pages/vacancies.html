@@ -1,0 +1,364 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<main class="page">
+			<nav class="breadcrumbs">
+				<div class="breadcrumbs__container">
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__item"><a href="{% url 'index' %}" class="breadcrumbs__link">Главная</a></li>
+						<li class="breadcrumbs__item"><span class="breadcrumbs__current">Вакансии</span>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<section class="vacancies section-top section-bottom">
+				<div class="vacancies__container">
+					<div class="content-block">
+						<div class="tabs _tab-init" data-tabs="" data-tabs-index="0">
+							<div class="content-block__left">
+								<div class="content-block__line"></div>
+								<nav data-tabs-titles="" class="tabs__navigation" data-da=".vacancies .content-block__info, 991.98,1">
+									<button type="button" class="tabs__title _tab-active" data-tabs-title="">Административный персонал</button>
+									<button type="button" class="tabs__title" data-tabs-title="">Маркетинг</button>
+									<button type="button" class="tabs__title" data-tabs-title="">Продажи</button>
+									<button type="button" class="tabs__title" data-tabs-title="">Юридический отдел</button>
+								</nav>
+
+							</div>
+							<div class="content-block__info">
+								<h2 class="content-block__title title">вакансии</h2>
+								<div class="vacancies__text">
+									Мы создаём новые рабочие места, обеспечиваем стабильную занятость, достойную заработную
+									плату, социальные гарантии и предоставляем возможности для профессионального роста,
+									соблюдаем трудовое законодательство и стандарты.
+								</div>
+								<div data-tabs-body="" class="tabs__content">
+									<div class="tabs__body" data-tabs-item="">
+										<div data-spollers="" class="spollers _spoller-init">
+											<details class="spollers__item">
+												<summary class="spollers__title">Офис менеджер</summary>
+												<div class="spollers__body" hidden="">
+													<div class="vacancy">
+														<div class="vacancy__city">
+															<img src="{% static 'img/icons/reviews/01.svg' %}" alt="Image">
+															<strong>г. Ростов-на-Дону</strong>
+														</div>
+														<div class="vacancy__param">
+															<strong>Требования</strong>
+															<ul>
+																<li>Уверенный пользователь ПК (Microsoft Word, Excel,
+																	PowerPoint);
+																</li>
+																<li>Желательны базовые знания 1C, если нет - научим;</li>
+																<li>Грамотная устная и письменная речь;</li>
+																<li>Образование не ниже среднего профессионального.</li>
+															</ul>
+														</div>
+														<div class="vacancy__param">
+															<strong>Обязанности</strong>
+															<ul>
+																<li>Уверенный пользователь ПК (Microsoft Word, Excel,
+																	PowerPoint);
+																</li>
+																<li>Прием телефонных звонков</li>
+																<li>Прием и регистрация входящей и исходящей
+																	корреспонденции;
+																</li>
+																<li>Обеспечение жизнедеятельности офиса;</li>
+															</ul>
+														</div>
+														<div class="vacancy__action">
+															<button class="vacancy__btn button" type="button">Откликнуться</button>
+														</div>
+													</div>
+												</div>
+											</details>
+											<details class="spollers__item">
+												<summary class="spollers__title">Менеджер по персоналу</summary>
+												<div class="spollers__body" hidden="">
+													<div class="vacancy">
+														<div class="vacancy__city">
+															<img src="{% static 'img/icons/reviews/01.svg' %}" alt="Image">
+															<strong>г. Ростов-на-Дону</strong>
+														</div>
+														<div class="vacancy__param">
+															<strong>Требования</strong>
+															<ul>
+																<li>Уверенный пользователь ПК (Microsoft Word, Excel,
+																	PowerPoint);
+																</li>
+																<li>Желательны базовые знания 1C, если нет - научим;</li>
+																<li>Грамотная устная и письменная речь;</li>
+																<li>Образование не ниже среднего профессионального.</li>
+															</ul>
+														</div>
+														<div class="vacancy__param">
+															<strong>Обязанности</strong>
+															<ul>
+																<li>Уверенный пользователь ПК (Microsoft Word, Excel,
+																	PowerPoint);
+																</li>
+																<li>Прием телефонных звонков</li>
+																<li>Прием и регистрация входящей и исходящей
+																	корреспонденции;
+																</li>
+																<li>Обеспечение жизнедеятельности офиса;</li>
+															</ul>
+														</div>
+														<div class="vacancy__action">
+															<button class="vacancy__btn button" type="button">Откликнуться</button>
+														</div>
+													</div>
+												</div>
+											</details>
+											<details class="spollers__item">
+												<summary class="spollers__title">Секретарь</summary>
+												<div class="spollers__body" hidden="">
+													<div class="vacancy">
+														<div class="vacancy__city">
+															<img src="{% static 'img/icons/reviews/01.svg' %}" alt="Image">
+															<strong>г. Ростов-на-Дону</strong>
+														</div>
+														<div class="vacancy__param">
+															<strong>Требования</strong>
+															<ul>
+																<li>Уверенный пользователь ПК (Microsoft Word, Excel,
+																	PowerPoint);
+																</li>
+																<li>Желательны базовые знания 1C, если нет - научим;</li>
+																<li>Грамотная устная и письменная речь;</li>
+																<li>Образование не ниже среднего профессионального.</li>
+															</ul>
+														</div>
+														<div class="vacancy__param">
+															<strong>Обязанности</strong>
+															<ul>
+																<li>Уверенный пользователь ПК (Microsoft Word, Excel,
+																	PowerPoint);
+																</li>
+																<li>Прием телефонных звонков</li>
+																<li>Прием и регистрация входящей и исходящей
+																	корреспонденции;
+																</li>
+																<li>Обеспечение жизнедеятельности офиса;</li>
+															</ul>
+														</div>
+														<div class="vacancy__action">
+															<button class="vacancy__btn button" type="button">Откликнуться</button>
+														</div>
+													</div>
+												</div>
+											</details>
+										</div>
+									</div>
+									<div class="tabs__body" data-tabs-item="" hidden="">
+										<div data-spollers="" class="spollers _spoller-init">
+											<details class="spollers__item">
+												<summary class="spollers__title">Менеджер по персоналу</summary>
+												<div class="spollers__body" hidden="">
+													<div class="vacancy">
+														<div class="vacancy__city">
+															<img src="{% static 'img/icons/reviews/01.svg' %}" alt="Image">
+															<strong>г. Ростов-на-Дону</strong>
+														</div>
+														<div class="vacancy__param">
+															<strong>Требования</strong>
+															<ul>
+																<li>Уверенный пользователь ПК (Microsoft Word, Excel,
+																	PowerPoint);
+																</li>
+																<li>Желательны базовые знания 1C, если нет - научим;</li>
+																<li>Грамотная устная и письменная речь;</li>
+																<li>Образование не ниже среднего профессионального.</li>
+															</ul>
+														</div>
+														<div class="vacancy__param">
+															<strong>Обязанности</strong>
+															<ul>
+																<li>Уверенный пользователь ПК (Microsoft Word, Excel,
+																	PowerPoint);
+																</li>
+																<li>Прием телефонных звонков</li>
+																<li>Прием и регистрация входящей и исходящей
+																	корреспонденции;
+																</li>
+																<li>Обеспечение жизнедеятельности офиса;</li>
+															</ul>
+														</div>
+														<div class="vacancy__action">
+															<button class="vacancy__btn button" type="button">Откликнуться</button>
+														</div>
+													</div>
+												</div>
+											</details>
+										</div>
+									</div>
+									<div class="tabs__body" data-tabs-item="" hidden="">
+										<div data-spollers="" class="spollers _spoller-init">
+											<details class="spollers__item">
+												<summary class="spollers__title">Секретарь</summary>
+												<div class="spollers__body" hidden="">
+													<div class="vacancy">
+														<div class="vacancy__city">
+															<img src="{% static 'img/icons/reviews/01.svg' %}" alt="Image">
+															<strong>г. Ростов-на-Дону</strong>
+														</div>
+														<div class="vacancy__param">
+															<strong>Требования</strong>
+															<ul>
+																<li>Уверенный пользователь ПК (Microsoft Word, Excel,
+																	PowerPoint);
+																</li>
+																<li>Желательны базовые знания 1C, если нет - научим;</li>
+																<li>Грамотная устная и письменная речь;</li>
+																<li>Образование не ниже среднего профессионального.</li>
+															</ul>
+														</div>
+														<div class="vacancy__param">
+															<strong>Обязанности</strong>
+															<ul>
+																<li>Уверенный пользователь ПК (Microsoft Word, Excel,
+																	PowerPoint);
+																</li>
+																<li>Прием телефонных звонков</li>
+																<li>Прием и регистрация входящей и исходящей
+																	корреспонденции;
+																</li>
+																<li>Обеспечение жизнедеятельности офиса;</li>
+															</ul>
+														</div>
+														<div class="vacancy__action">
+															<button class="vacancy__btn button" type="button">Откликнуться</button>
+														</div>
+													</div>
+												</div>
+											</details>
+										</div>
+									</div>
+									<div class="tabs__body" data-tabs-item="" hidden="">
+										<div data-spollers="" class="spollers _spoller-init">
+											<details class="spollers__item">
+												<summary class="spollers__title">Офис менеджер</summary>
+												<div class="spollers__body" hidden="">
+													<div class="vacancy">
+														<div class="vacancy__city">
+															<img src="{% static '/icons/reviews/01.svg' %}" alt="Image">
+															<strong>г. Ростов-на-Дону</strong>
+														</div>
+														<div class="vacancy__param">
+															<strong>Требования</strong>
+															<ul>
+																<li>Уверенный пользователь ПК (Microsoft Word, Excel,
+																	PowerPoint);
+																</li>
+																<li>Желательны базовые знания 1C, если нет - научим;</li>
+																<li>Грамотная устная и письменная речь;</li>
+																<li>Образование не ниже среднего профессионального.</li>
+															</ul>
+														</div>
+														<div class="vacancy__param">
+															<strong>Обязанности</strong>
+															<ul>
+																<li>Уверенный пользователь ПК (Microsoft Word, Excel,
+																	PowerPoint);
+																</li>
+																<li>Прием телефонных звонков</li>
+																<li>Прием и регистрация входящей и исходящей
+																	корреспонденции;
+																</li>
+																<li>Обеспечение жизнедеятельности офиса;</li>
+															</ul>
+														</div>
+														<div class="vacancy__action">
+															<button class="vacancy__btn button" type="button">Откликнуться</button>
+														</div>
+													</div>
+												</div>
+											</details>
+											<details class="spollers__item">
+												<summary class="spollers__title">Менеджер по персоналу</summary>
+												<div class="spollers__body" hidden="">
+													<div class="vacancy">
+														<div class="vacancy__city">
+															<img src="{% static 'img/icons/reviews/01.svg' %}" alt="Image">
+															<strong>г. Ростов-на-Дону</strong>
+														</div>
+														<div class="vacancy__param">
+															<strong>Требования</strong>
+															<ul>
+																<li>Уверенный пользователь ПК (Microsoft Word, Excel,
+																	PowerPoint);
+																</li>
+																<li>Желательны базовые знания 1C, если нет - научим;</li>
+																<li>Грамотная устная и письменная речь;</li>
+																<li>Образование не ниже среднего профессионального.</li>
+															</ul>
+														</div>
+														<div class="vacancy__param">
+															<strong>Обязанности</strong>
+															<ul>
+																<li>Уверенный пользователь ПК (Microsoft Word, Excel,
+																	PowerPoint);
+																</li>
+																<li>Прием телефонных звонков</li>
+																<li>Прием и регистрация входящей и исходящей
+																	корреспонденции;
+																</li>
+																<li>Обеспечение жизнедеятельности офиса;</li>
+															</ul>
+														</div>
+														<div class="vacancy__action">
+															<button class="vacancy__btn button" type="button">Откликнуться</button>
+														</div>
+													</div>
+												</div>
+											</details>
+											<details class="spollers__item">
+												<summary class="spollers__title">Секретарь</summary>
+												<div class="spollers__body" hidden="">
+													<div class="vacancy">
+														<div class="vacancy__city">
+															<img src="{% static 'img/icons/reviews/01.svg' %}" alt="Image">
+															<strong>г. Ростов-на-Дону</strong>
+														</div>
+														<div class="vacancy__param">
+															<strong>Требования</strong>
+															<ul>
+																<li>Уверенный пользователь ПК (Microsoft Word, Excel,
+																	PowerPoint);
+																</li>
+																<li>Желательны базовые знания 1C, если нет - научим;</li>
+																<li>Грамотная устная и письменная речь;</li>
+																<li>Образование не ниже среднего профессионального.</li>
+															</ul>
+														</div>
+														<div class="vacancy__param">
+															<strong>Обязанности</strong>
+															<ul>
+																<li>Уверенный пользователь ПК (Microsoft Word, Excel,
+																	PowerPoint);
+																</li>
+																<li>Прием телефонных звонков</li>
+																<li>Прием и регистрация входящей и исходящей
+																	корреспонденции;
+																</li>
+																<li>Обеспечение жизнедеятельности офиса;</li>
+															</ul>
+														</div>
+														<div class="vacancy__action">
+															<button class="vacancy__btn button" type="button">Откликнуться</button>
+														</div>
+													</div>
+												</div>
+											</details>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+{% endblock %}

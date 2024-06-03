@@ -76,3 +76,10 @@ class SalePage(View):
 
     def get(self, request):
         return render(request, self.template_name)
+
+class VacanciesPage(View):
+    """ Страница 'Вакансии' """
+    template_name = 'pages/vacancies.html'
+
+    def get(self, request):
+        return render(request, self.template_name)
