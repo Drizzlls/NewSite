@@ -1,0 +1,628 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<main class="page">
+			<nav class="breadcrumbs">
+				<div class="breadcrumbs__container">
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__item"><a href="{% url 'index' %}" class="breadcrumbs__link">Главная</a></li>
+<!--						<li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Клиентам</a></li>-->
+						<li class="breadcrumbs__item"><span class="breadcrumbs__current">Завершенные дела</span>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<section class="cases-page section-top section-bottom">
+				<div class="cases-page__container">
+					<div class="content-block">
+						<div class="tabs _tab-init" data-tabs="" data-tabs-index="0">
+							<div class="content-block__left">
+								<div class="content-block__line"></div>
+								<nav data-tabs-titles="" class="tabs__navigation" data-da=".cases-page .content-block__info, 991.98,1">
+									<button type="button" class="tabs__title _tab-active" data-tabs-title="">2023</button>
+									<button type="button" class="tabs__title" data-tabs-title="">2022</button>
+									<button type="button" class="tabs__title" data-tabs-title="">2021</button>
+									<button type="button" class="tabs__title" data-tabs-title="">2020</button>
+									<button type="button" class="tabs__title" data-tabs-title="">2019</button>
+								</nav>
+
+							</div>
+							<div class="content-block__info">
+								<h2 class="content-block__title title">завершенные дела</h2>
+								<div data-tabs-body="" class="tabs__content">
+									<div class="tabs__body" data-tabs-item="">
+										<div class="cases-finish__items">
+											<div class="item-case">
+												<div class="item-case__header">
+													<strong class="title_h3 title">Родин <br> Александр Константинович</strong>
+													<small class="text">г. Москва</small>
+												</div>
+												<div class="item-case__down">
+													<a href="">
+														<img src="{% static 'img/icons/pdf.svg' %}" width="35" height="36" alt="Image">
+														Скачать <br> определение
+													</a>
+												</div>
+
+												<div class="info-item-items">
+													<div class="info-item">
+														<div class="info-item__label text">Сумма списанного:</div>
+														<div class="info-item__value red-gradient title title_h3">800 000 ₽</div>
+													</div>
+													<div class="info-item">
+														<div class="info-item__label text">Число кредииторов:</div>
+														<div class="info-item__value title-subtitle">3</div>
+													</div>
+													<div class="info-item">
+														<div class="info-item__label text">Номер дела:</div>
+														<div class="info-item__value title-subtitle">№А53-42933/2019</div>
+													</div>
+												</div>
+											</div>
+											<div class="item-case">
+												<div class="item-case__header">
+													<strong class="title_h3 title">Иванов <br> Иван Иванович</strong>
+													<small class="text">г. Одинцово</small>
+												</div>
+												<div class="item-case__down">
+													<a href="">
+														<img src="{% static 'img/icons/pdf.svg' %}" width="35" height="36" alt="Image">
+														Скачать <br> определение
+													</a>
+												</div>
+
+												<div class="info-item-items">
+													<div class="info-item">
+														<div class="info-item__label text">Сумма списанного:</div>
+														<div class="info-item__value red-gradient title title_h3">1 350 000 ₽</div>
+													</div>
+													<div class="info-item">
+														<div class="info-item__label text">Число кредииторов:</div>
+														<div class="info-item__value title-subtitle">2</div>
+													</div>
+													<div class="info-item">
+														<div class="info-item__label text">Номер дела:</div>
+														<div class="info-item__value title-subtitle">№А53-54869/2022</div>
+													</div>
+												</div>
+											</div>
+											<div class="item-case">
+												<div class="item-case__header">
+													<strong class="title_h3 title">Воскресенский <br>
+														Петр Валерьевич</strong>
+													<small class="text">г. Москва</small>
+												</div>
+												<div class="item-case__down">
+													<a href="">
+														<img src="{% static 'img/icons/pdf.svg' %}" width="35" height="36" alt="Image">
+														Скачать <br> определение
+													</a>
+												</div>
+
+												<div class="info-item-items">
+													<div class="info-item">
+														<div class="info-item__label text">Сумма списанного:</div>
+														<div class="info-item__value red-gradient title title_h3">2 693 000 ₽</div>
+													</div>
+													<div class="info-item">
+														<div class="info-item__label text">Число кредииторов:</div>
+														<div class="info-item__value title-subtitle">1</div>
+													</div>
+													<div class="info-item">
+														<div class="info-item__label text">Номер дела:</div>
+														<div class="info-item__value title-subtitle">№А53-86276/2022</div>
+													</div>
+												</div>
+											</div>
+											<div class="item-case">
+												<div class="item-case__header">
+													<strong class="title_h3 title">Горин <br> Владимир Васильевич</strong>
+													<small class="text">г. Зеленоград</small>
+												</div>
+												<div class="item-case__down">
+													<a href="">
+														<img src="{% static 'img/icons/pdf.svg' %}" width="35" height="36" alt="Image">
+														Скачать <br> определение
+													</a>
+												</div>
+
+												<div class="info-item-items">
+													<div class="info-item">
+														<div class="info-item__label text">Сумма списанного:</div>
+														<div class="info-item__value red-gradient title title_h3">315 000 ₽</div>
+													</div>
+													<div class="info-item">
+														<div class="info-item__label text">Число кредииторов:</div>
+														<div class="info-item__value title-subtitle">1</div>
+													</div>
+													<div class="info-item">
+														<div class="info-item__label text">Номер дела:</div>
+														<div class="info-item__value title-subtitle">№А53-69344/2022</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="content-block__action">
+											<a href="" class="content-block__btn button button_outline">Посмотреть больше дел</a>
+										</div>
+
+									</div>
+									<div class="tabs__body" data-tabs-item="" hidden="">
+										<div class="cases-finish__items">
+											<div class="item-case">
+												<div class="item-case__header">
+													<strong class="title_h3 title">Воскресенский <br>
+														Петр Валерьевич</strong>
+													<small class="text">г. Москва</small>
+												</div>
+												<div class="item-case__down">
+													<a href="">
+														<img src="{% static 'img/icons/pdf.svg' %}" width="35" height="36" alt="Image">
+														Скачать <br> определение
+													</a>
+												</div>
+
+												<div class="info-item-items">
+													<div class="info-item">
+														<div class="info-item__label text">Сумма списанного:</div>
+														<div class="info-item__value red-gradient title title_h3">2 693 000 ₽</div>
+													</div>
+													<div class="info-item">
+														<div class="info-item__label text">Число кредииторов:</div>
+														<div class="info-item__value title-subtitle">1</div>
+													</div>
+													<div class="info-item">
+														<div class="info-item__label text">Номер дела:</div>
+														<div class="info-item__value title-subtitle">№А53-86276/2022</div>
+													</div>
+												</div>
+											</div>
+											<div class="item-case">
+												<div class="item-case__header">
+													<strong class="title_h3 title">Родин <br> Александр Константинович</strong>
+													<small class="text">г. Москва</small>
+												</div>
+												<div class="item-case__down">
+													<a href="">
+														<img src="{% static 'img/icons/pdf.svg' %}" width="35" height="36" alt="Image">
+														Скачать <br> определение
+													</a>
+												</div>
+
+												<div class="info-item-items">
+													<div class="info-item">
+														<div class="info-item__label text">Сумма списанного:</div>
+														<div class="info-item__value red-gradient title title_h3">800 000 ₽</div>
+													</div>
+													<div class="info-item">
+														<div class="info-item__label text">Число кредииторов:</div>
+														<div class="info-item__value title-subtitle">3</div>
+													</div>
+													<div class="info-item">
+														<div class="info-item__label text">Номер дела:</div>
+														<div class="info-item__value title-subtitle">№А53-42933/2019</div>
+													</div>
+												</div>
+											</div>
+											<div class="item-case">
+												<div class="item-case__header">
+													<strong class="title_h3 title">Иванов <br> Иван Иванович</strong>
+													<small class="text">г. Одинцово</small>
+												</div>
+												<div class="item-case__down">
+													<a href="">
+														<img src="{% static 'img/icons/pdf.svg' %}" width="35" height="36" alt="Image">
+														Скачать <br> определение
+													</a>
+												</div>
+
+												<div class="info-item-items">
+													<div class="info-item">
+														<div class="info-item__label text">Сумма списанного:</div>
+														<div class="info-item__value red-gradient title title_h3">1 350 000 ₽</div>
+													</div>
+													<div class="info-item">
+														<div class="info-item__label text">Число кредииторов:</div>
+														<div class="info-item__value title-subtitle">2</div>
+													</div>
+													<div class="info-item">
+														<div class="info-item__label text">Номер дела:</div>
+														<div class="info-item__value title-subtitle">№А53-54869/2022</div>
+													</div>
+												</div>
+											</div>
+											<div class="item-case">
+												<div class="item-case__header">
+													<strong class="title_h3 title">Горин <br> Владимир Васильевич</strong>
+													<small class="text">г. Зеленоград</small>
+												</div>
+												<div class="item-case__down">
+													<a href="">
+														<img src="{% static 'img/icons/pdf.svg' %}" width="35" height="36" alt="Image">
+														Скачать <br> определение
+													</a>
+												</div>
+
+												<div class="info-item-items">
+													<div class="info-item">
+														<div class="info-item__label text">Сумма списанного:</div>
+														<div class="info-item__value red-gradient title title_h3">315 000 ₽</div>
+													</div>
+													<div class="info-item">
+														<div class="info-item__label text">Число кредииторов:</div>
+														<div class="info-item__value title-subtitle">1</div>
+													</div>
+													<div class="info-item">
+														<div class="info-item__label text">Номер дела:</div>
+														<div class="info-item__value title-subtitle">№А53-69344/2022</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="content-block__action">
+											<a href="" class="content-block__btn button button_outline">Посмотреть больше дел</a>
+										</div>
+
+									</div>
+									<div class="tabs__body" data-tabs-item="" hidden="">
+										<div class="cases-finish__items">
+											<div class="item-case">
+												<div class="item-case__header">
+													<strong class="title_h3 title">Горин <br> Владимир Васильевич</strong>
+													<small class="text">г. Зеленоград</small>
+												</div>
+												<div class="item-case__down">
+													<a href="">
+														<img src="{% static 'img/icons/pdf.svg' %}" width="35" height="36" alt="Image">
+														Скачать <br> определение
+													</a>
+												</div>
+
+												<div class="info-item-items">
+													<div class="info-item">
+														<div class="info-item__label text">Сумма списанного:</div>
+														<div class="info-item__value red-gradient title title_h3">315 000 ₽</div>
+													</div>
+													<div class="info-item">
+														<div class="info-item__label text">Число кредииторов:</div>
+														<div class="info-item__value title-subtitle">1</div>
+													</div>
+													<div class="info-item">
+														<div class="info-item__label text">Номер дела:</div>
+														<div class="info-item__value title-subtitle">№А53-69344/2022</div>
+													</div>
+												</div>
+											</div>
+											<div class="item-case">
+												<div class="item-case__header">
+													<strong class="title_h3 title">Родин <br> Александр Константинович</strong>
+													<small class="text">г. Москва</small>
+												</div>
+												<div class="item-case__down">
+													<a href="">
+														<img src="{% static 'img/icons/pdf.svg' %}" width="35" height="36" alt="Image">
+														Скачать <br> определение
+													</a>
+												</div>
+
+												<div class="info-item-items">
+													<div class="info-item">
+														<div class="info-item__label text">Сумма списанного:</div>
+														<div class="info-item__value red-gradient title title_h3">800 000 ₽</div>
+													</div>
+													<div class="info-item">
+														<div class="info-item__label text">Число кредииторов:</div>
+														<div class="info-item__value title-subtitle">3</div>
+													</div>
+													<div class="info-item">
+														<div class="info-item__label text">Номер дела:</div>
+														<div class="info-item__value title-subtitle">№А53-42933/2019</div>
+													</div>
+												</div>
+											</div>
+											<div class="item-case">
+												<div class="item-case__header">
+													<strong class="title_h3 title">Иванов <br> Иван Иванович</strong>
+													<small class="text">г. Одинцово</small>
+												</div>
+												<div class="item-case__down">
+													<a href="">
+														<img src="{% static 'img/icons/pdf.svg' %}" width="35" height="36" alt="Image">
+														Скачать <br> определение
+													</a>
+												</div>
+
+												<div class="info-item-items">
+													<div class="info-item">
+														<div class="info-item__label text">Сумма списанного:</div>
+														<div class="info-item__value red-gradient title title_h3">1 350 000 ₽</div>
+													</div>
+													<div class="info-item">
+														<div class="info-item__label text">Число кредииторов:</div>
+														<div class="info-item__value title-subtitle">2</div>
+													</div>
+													<div class="info-item">
+														<div class="info-item__label text">Номер дела:</div>
+														<div class="info-item__value title-subtitle">№А53-54869/2022</div>
+													</div>
+												</div>
+											</div>
+											<div class="item-case">
+												<div class="item-case__header">
+													<strong class="title_h3 title">Воскресенский <br>
+														Петр Валерьевич</strong>
+													<small class="text">г. Москва</small>
+												</div>
+												<div class="item-case__down">
+													<a href="">
+														<img src="{% static 'img/icons/pdf.svg' %}" width="35" height="36" alt="Image">
+														Скачать <br> определение
+													</a>
+												</div>
+
+												<div class="info-item-items">
+													<div class="info-item">
+														<div class="info-item__label text">Сумма списанного:</div>
+														<div class="info-item__value red-gradient title title_h3">2 693 000 ₽</div>
+													</div>
+													<div class="info-item">
+														<div class="info-item__label text">Число кредииторов:</div>
+														<div class="info-item__value title-subtitle">1</div>
+													</div>
+													<div class="info-item">
+														<div class="info-item__label text">Номер дела:</div>
+														<div class="info-item__value title-subtitle">№А53-86276/2022</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="content-block__action">
+											<a href="" class="content-block__btn button button_outline">Посмотреть больше дел</a>
+										</div>
+
+									</div>
+									<div class="tabs__body" data-tabs-item="" hidden="">
+										<div class="cases-finish__items">
+											<div class="item-case">
+												<div class="item-case__header">
+													<strong class="title_h3 title">Горин <br> Владимир Васильевич</strong>
+													<small class="text">г. Зеленоград</small>
+												</div>
+												<div class="item-case__down">
+													<a href="">
+														<img src="{% static 'img/icons/pdf.svg' %}" width="35" height="36" alt="Image">
+														Скачать <br> определение
+													</a>
+												</div>
+
+												<div class="info-item-items">
+													<div class="info-item">
+														<div class="info-item__label text">Сумма списанного:</div>
+														<div class="info-item__value red-gradient title title_h3">315 000 ₽</div>
+													</div>
+													<div class="info-item">
+														<div class="info-item__label text">Число кредииторов:</div>
+														<div class="info-item__value title-subtitle">1</div>
+													</div>
+													<div class="info-item">
+														<div class="info-item__label text">Номер дела:</div>
+														<div class="info-item__value title-subtitle">№А53-69344/2022</div>
+													</div>
+												</div>
+											</div>
+											<div class="item-case">
+												<div class="item-case__header">
+													<strong class="title_h3 title">Иванов <br> Иван Иванович</strong>
+													<small class="text">г. Одинцово</small>
+												</div>
+												<div class="item-case__down">
+													<a href="">
+														<img src="{% static 'img/icons/pdf.svg' %}" width="35" height="36" alt="Image">
+														Скачать <br> определение
+													</a>
+												</div>
+
+												<div class="info-item-items">
+													<div class="info-item">
+														<div class="info-item__label text">Сумма списанного:</div>
+														<div class="info-item__value red-gradient title title_h3">1 350 000 ₽</div>
+													</div>
+													<div class="info-item">
+														<div class="info-item__label text">Число кредииторов:</div>
+														<div class="info-item__value title-subtitle">2</div>
+													</div>
+													<div class="info-item">
+														<div class="info-item__label text">Номер дела:</div>
+														<div class="info-item__value title-subtitle">№А53-54869/2022</div>
+													</div>
+												</div>
+											</div>
+											<div class="item-case">
+												<div class="item-case__header">
+													<strong class="title_h3 title">Родин <br> Александр Константинович</strong>
+													<small class="text">г. Москва</small>
+												</div>
+												<div class="item-case__down">
+													<a href="">
+														<img src="{% static 'img/icons/pdf.svg' %}" width="35" height="36" alt="Image">
+														Скачать <br> определение
+													</a>
+												</div>
+
+												<div class="info-item-items">
+													<div class="info-item">
+														<div class="info-item__label text">Сумма списанного:</div>
+														<div class="info-item__value red-gradient title title_h3">800 000 ₽</div>
+													</div>
+													<div class="info-item">
+														<div class="info-item__label text">Число кредииторов:</div>
+														<div class="info-item__value title-subtitle">3</div>
+													</div>
+													<div class="info-item">
+														<div class="info-item__label text">Номер дела:</div>
+														<div class="info-item__value title-subtitle">№А53-42933/2019</div>
+													</div>
+												</div>
+											</div>
+											<div class="item-case">
+												<div class="item-case__header">
+													<strong class="title_h3 title">Воскресенский <br>
+														Петр Валерьевич</strong>
+													<small class="text">г. Москва</small>
+												</div>
+												<div class="item-case__down">
+													<a href="">
+														<img src="{% static 'img/icons/pdf.svg' %}" width="35" height="36" alt="Image">
+														Скачать <br> определение
+													</a>
+												</div>
+
+												<div class="info-item-items">
+													<div class="info-item">
+														<div class="info-item__label text">Сумма списанного:</div>
+														<div class="info-item__value red-gradient title title_h3">2 693 000 ₽</div>
+													</div>
+													<div class="info-item">
+														<div class="info-item__label text">Число кредииторов:</div>
+														<div class="info-item__value title-subtitle">1</div>
+													</div>
+													<div class="info-item">
+														<div class="info-item__label text">Номер дела:</div>
+														<div class="info-item__value title-subtitle">№А53-86276/2022</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="content-block__action">
+											<a href="" class="content-block__btn button button_outline">Посмотреть больше дел</a>
+										</div>
+
+									</div>
+									<div class="tabs__body" data-tabs-item="" hidden="">
+										<div class="cases-finish__items">
+											<div class="item-case">
+												<div class="item-case__header">
+													<strong class="title_h3 title">Воскресенский <br>
+														Петр Валерьевич</strong>
+													<small class="text">г. Москва</small>
+												</div>
+												<div class="item-case__down">
+													<a href="">
+														<img src="{% static 'img/icons/pdf.svg' %}" width="35" height="36" alt="Image">
+														Скачать <br> определение
+													</a>
+												</div>
+
+												<div class="info-item-items">
+													<div class="info-item">
+														<div class="info-item__label text">Сумма списанного:</div>
+														<div class="info-item__value red-gradient title title_h3">2 693 000 ₽</div>
+													</div>
+													<div class="info-item">
+														<div class="info-item__label text">Число кредииторов:</div>
+														<div class="info-item__value title-subtitle">1</div>
+													</div>
+													<div class="info-item">
+														<div class="info-item__label text">Номер дела:</div>
+														<div class="info-item__value title-subtitle">№А53-86276/2022</div>
+													</div>
+												</div>
+											</div>
+											<div class="item-case">
+												<div class="item-case__header">
+													<strong class="title_h3 title">Горин <br> Владимир Васильевич</strong>
+													<small class="text">г. Зеленоград</small>
+												</div>
+												<div class="item-case__down">
+													<a href="">
+														<img src="{% static 'img/icons/pdf.svg' %}" width="35" height="36" alt="Image">
+														Скачать <br> определение
+													</a>
+												</div>
+
+												<div class="info-item-items">
+													<div class="info-item">
+														<div class="info-item__label text">Сумма списанного:</div>
+														<div class="info-item__value red-gradient title title_h3">315 000 ₽</div>
+													</div>
+													<div class="info-item">
+														<div class="info-item__label text">Число кредииторов:</div>
+														<div class="info-item__value title-subtitle">1</div>
+													</div>
+													<div class="info-item">
+														<div class="info-item__label text">Номер дела:</div>
+														<div class="info-item__value title-subtitle">№А53-69344/2022</div>
+													</div>
+												</div>
+											</div>
+											<div class="item-case">
+												<div class="item-case__header">
+													<strong class="title_h3 title">Родин <br> Александр Константинович</strong>
+													<small class="text">г. Москва</small>
+												</div>
+												<div class="item-case__down">
+													<a href="">
+														<img src="{% static 'img/icons/pdf.svg' %}" width="35" height="36" alt="Image">
+														Скачать <br> определение
+													</a>
+												</div>
+
+												<div class="info-item-items">
+													<div class="info-item">
+														<div class="info-item__label text">Сумма списанного:</div>
+														<div class="info-item__value red-gradient title title_h3">800 000 ₽</div>
+													</div>
+													<div class="info-item">
+														<div class="info-item__label text">Число кредииторов:</div>
+														<div class="info-item__value title-subtitle">3</div>
+													</div>
+													<div class="info-item">
+														<div class="info-item__label text">Номер дела:</div>
+														<div class="info-item__value title-subtitle">№А53-42933/2019</div>
+													</div>
+												</div>
+											</div>
+											<div class="item-case">
+												<div class="item-case__header">
+													<strong class="title_h3 title">Иванов <br> Иван Иванович</strong>
+													<small class="text">г. Одинцово</small>
+												</div>
+												<div class="item-case__down">
+													<a href="">
+														<img src="{% static 'img/icons/pdf.svg' %}" width="35" height="36" alt="Image">
+														Скачать <br> определение
+													</a>
+												</div>
+
+												<div class="info-item-items">
+													<div class="info-item">
+														<div class="info-item__label text">Сумма списанного:</div>
+														<div class="info-item__value red-gradient title title_h3">1 350 000 ₽</div>
+													</div>
+													<div class="info-item">
+														<div class="info-item__label text">Число кредииторов:</div>
+														<div class="info-item__value title-subtitle">2</div>
+													</div>
+													<div class="info-item">
+														<div class="info-item__label text">Номер дела:</div>
+														<div class="info-item__value title-subtitle">№А53-54869/2022</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="content-block__action">
+											<a href="" class="content-block__btn button button_outline">Посмотреть больше дел</a>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			{% include 'inc/chunks/_quiz.html' %}
+
+		</main>
+
+{% endblock %}

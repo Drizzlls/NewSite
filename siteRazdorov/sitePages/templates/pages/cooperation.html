@@ -1,0 +1,127 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+		<main class="page">
+			<nav class="breadcrumbs">
+				<div class="breadcrumbs__container">
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__item"><a href="{% url 'index' %}" class="breadcrumbs__link">Главная</a></li>
+						<li class="breadcrumbs__item"><span class="breadcrumbs__current">Сотрудничество</span>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<section class="cooperation section-top section-bottom">
+				<div class="cooperation__container">
+					<div class="content-block">
+						<div class="content-block__left">
+							<div class="content-block__line"></div>
+						</div>
+						<div class="content-block__info">
+							<h2 class="content-block__title title">Сотрудничество</h2>
+							<div class="cooperation__text text">
+								<p> Юридическая компания “Раздоров” предлагает компаниям и частным лицам различные
+									направления сотрудничества на взаимовыгодной основе.</p>
+								<p>
+									Давайте работать вместе! Мы сотрудничаем с компаниями в различных сферах, а также с их
+									активными руководителями и менеджерами. Рекомендуйте вашим клиентам услуги нашей
+									компании и получайте агентское вознаграждение. Предлагая клиентам дополнительные услуги
+									от надежного партнера, вы получаете конкурентное преимущество, повышаете лояльность и
+									удовлетворенность своих клиентов.
+								</p>
+							</div>
+							<div class="cooperation__title title title_h3">Станьте нашим партнером и получите тройную
+								выгоду!
+							</div>
+							<div class="cooperation__items">
+								<div class="item-cooperation">
+									<img src="{% static 'img/icons/cooperation/01.svg' %}" alt="Image" class="item-cooperation__icon">
+									<div class="item-cooperation__text">
+										Вы можете быть уверены в качестве услуг и высоком уровне сервиса. Посмотрите <a href="">Отзывы клиентов</a>, а также получите бесплатную консультацию наших
+										юристов
+									</div>
+								</div>
+								<div class="item-cooperation">
+									<img src="{% static 'img/icons/cooperation/02.svg' %}" alt="Image" class="item-cooperation__icon">
+									<div class="item-cooperation__text">
+										Выплаты вознаграждения партнерам мы производим из своего дохода, не накручивая
+										цены. Мы готовы предоставить скидку на услуги клиенту, обратившемуся по вашей
+										рекомендации.
+									</div>
+								</div>
+								<div class="item-cooperation">
+									<img src="{% static 'img/icons/cooperation/03.svg' %}" alt="Image" class="item-cooperation__icon">
+									<div class="item-cooperation__text">
+										Ваше вознаграждение составит 10 % от цены первого договора с клиентом и 5 % от
+										цены всех последующих договоров этого клиента в&nbsp;течение года.
+									</div>
+								</div>
+							</div>
+							<div class="video-block">
+								<div class="video-block__value">
+									<div class="video-block__inner">
+										<picture>
+											<source srcset='https:\\img.youtube.com/vi_webp/IBwIbaGlplU/maxresdefault.webp' type="image/webp">
+											<img src="https:\\img.youtube.com/vi/IBwIbaGlplU/maxresdefault.jpg" alt="Image">
+										</picture>
+										<button class="video-btn" type="button" data-video-id="IBwIbaGlplU">
+											<svg height="100%" viewBox="0 0 54 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M51.4824 26.6679C54.8205 28.5914 54.8205 33.4086 51.4824 35.3322L7.49649 60.68C4.16316 62.6009 2.10425e-07 60.195 3.78906e-07 56.3478L2.59903e-06 5.65216C2.76752e-06 1.80496 4.16316 -0.60089 7.4965 1.32001L51.4824 26.6679Z" />
+											</svg>
+											<span class="video-btn__text">
+												Смотреть видео
+											</span>
+										</button>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</section>
+			<section class="consultation _noimg section-bottom">
+				<div class="consultation__container">
+					<div class="consultation__inner">
+						<h2 class="consultation__title title color-white">Чтобы стать нашим <br> партнером, заполните заявку, и&nbsp;наш менеджер свяжется с вами для уточнения деталей.</h2>
+						<form action="#" class="form">
+							<div class="form__row">
+								<div class="form__column">
+									<label class="form__label" for="c-name">Имя*</label>
+									<div class="form__input">
+										<input class="input" autocomplete="off" id="c-name" type="text" placeholder="Иван">
+									</div>
+								</div>
+							</div>
+							<div class="form__row">
+								<div class="form__column">
+									<label class="form__label" for="c-city">Город</label>
+									<div class="form__input">
+										<input class="input" autocomplete="off" id="c-city" type="text" placeholder="Ростов-на-Дону">
+									</div>
+								</div>
+							</div>
+							<div class="form__row">
+								<div class="form__column">
+									<label class="form__label" for="c-tel">Номер телефона*</label>
+									<div class="form__input">
+										<input class="input" autocomplete="off" id="c-tel" type="text" placeholder="+7 999 999 99 99">
+									</div>
+								</div>
+								<div class="form__text">
+									Нажимая на кнопку “Отправить заявку” я даю согласие на&nbsp;обработку <a href="">персональных
+										данных</a>
+								</div>
+							</div>
+							<div class="form__row ">
+								<button class="form__button button button_white" type="submit">Отправить заявку</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+
+		</main>
+{% endblock %}

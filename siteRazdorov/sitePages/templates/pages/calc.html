@@ -1,0 +1,179 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<main class="page">
+			<nav class="breadcrumbs">
+				<div class="breadcrumbs__container">
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Главная</a></li>
+						<li class="breadcrumbs__item"><span class="breadcrumbs__current">Калькулятор</span>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<section class="calc section-bottom">
+				<div class="calc__container">
+					<div class="calc-form">
+						<h2 class="calc-form__title title">Рассчитайте стоимость банкротства онлайн</h2>
+						<form action="#" class="calc__form form">
+							<div class="form__top">
+								<div class="calc__options options">
+									<div class="options__item">
+										<input id="co_1" class="options__input" checked="" type="radio" value="1" name="person">
+										<label for="co_1" class="options__label">
+											<span class="options__text">Физическое лицо</span>
+										</label>
+									</div>
+									<div class="options__item">
+										<input id="co_2" class="options__input" type="radio" value="2" name="person">
+										<label for="co_2" class="options__label">
+											<span class="options__text">Поручитель</span>
+										</label>
+									</div>
+									<div class="options__item">
+										<input id="co_3" class="options__input" type="radio" value="2" name="person">
+										<label for="co_3" class="options__label">
+											<span class="options__text">Индивидуальный предприниматель</span>
+										</label>
+									</div>
+								</div>
+								<div class="form__row">
+									<div class="form__column">
+										<label class="form__label" for="debt">Сумма долга, руб.<span>*</span></label>
+										<div class="form__input">
+											<input class="input" autocomplete="off" id="debt" type="text" placeholder="10000">
+										</div>
+									</div>
+								</div>
+
+								<div class="form__row">
+									<div class="form__column">
+										<label class="form__label" for="region">Регион</label>
+										<div class="form__input">
+											<input class="input" autocomplete="off" id="region" type="text" placeholder="Москва">
+										</div>
+									</div>
+								</div>
+
+								<div class="form__row">
+									<div class="form__column">
+										<label class="form__label" for="mortgaged">Единиц залогового имущества</label>
+										<div class="form__input">
+											<input class="input" autocomplete="off" id="mortgaged" type="text" placeholder="1 ед.">
+										</div>
+									</div>
+								</div>
+
+								<div class="form__row">
+									<div class="form__column">
+										<label class="form__label" for="income">Доход в рублях<span>*</span></label>
+										<div class="form__input">
+											<input class="input" autocomplete="off" id="income" type="text" placeholder="10000">
+										</div>
+									</div>
+								</div>
+
+
+								<div class="form__row">
+									<div class="form__column">
+										<label class="form__label" for="coast-mortgaged">Стоимость имущества, руб.</label>
+										<div class="form__input">
+											<input class="input" autocomplete="off" id="coast-mortgaged" type="text" placeholder="1 000 000 ">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form__bottom">
+								<div class="form__row">
+									<label for="cold_1" class="form__label title-subtitle _options">Ваш возраст</label>
+									<div class="calc__options options">
+										<div class="options__item">
+											<input id="cold_1" class="options__input" checked="" type="radio" value="1" name="old">
+											<label for="cold_1" class="options__label">
+												<span class="options__text">Трудоспособный</span>
+											</label>
+										</div>
+										<div class="options__item">
+											<input id="cold_2" class="options__input" type="radio" value="2" name="old">
+											<label for="cold_2" class="options__label">
+												<span class="options__text">Пенсионер</span>
+											</label>
+										</div>
+									</div>
+								</div>
+
+								<div class="form__row">
+									<label for="deal_1" class="form__label title-subtitle _options">Сделки <span>*</span></label>
+									<div class="calc__options options">
+										<div class="options__item">
+											<input id="deal_1" class="options__input" checked="" type="radio" value="1" name="deal">
+											<label for="deal_1" class="options__label">
+												<span class="options__text">Да</span>
+											</label>
+										</div>
+										<div class="options__item">
+											<input id="deal_2" class="options__input" type="radio" value="2" name="deal">
+											<label for="deal_2" class="options__label">
+												<span class="options__text">Нет</span>
+											</label>
+										</div>
+									</div>
+								</div>
+
+								<div class="form__row">
+									<div class="form__column">
+										<label class="form__label" for="count-debt">Число кредиторов (всего, от 1 до 99)<span>*</span></label>
+										<div class="form__input">
+											<input class="input" autocomplete="off" id="count-debt" type="text" placeholder="1">
+										</div>
+									</div>
+								</div>
+
+								<div class="form__row">
+									<div class="form__column">
+										<label class="form__label" for="credits">Из них кредиторов, не являющихся банками и МФО</label>
+										<div class="form__input">
+											<input class="input" autocomplete="off" id="credits" type="text" placeholder="1">
+										</div>
+									</div>
+								</div>
+
+								<div class="form__row">
+									<div class="form__column">
+										<label class="form__label" for="count-dependents">Количество иждивенцев</label>
+										<div class="form__input">
+											<input class="input" autocomplete="off" id="count-dependents" type="text" placeholder="0">
+										</div>
+									</div>
+								</div>
+
+								<div class="form__row">
+									<div class="form__column">
+										<label class="form__label" for="aliments">Выплаты по алиментам, %</label>
+										<div class="form__input">
+											<input class="input" autocomplete="off" id="aliments" type="text" placeholder="0">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form__footer">
+								<div class="form__row">
+									<div class="form__text">
+										Нажимая на кнопку “Узнать” я даю согласие на обработку <a href="">персональных данных</a>
+									</div>
+								</div>
+								<div class="form__row">
+									<button class="form__button button" type="submit">Узнать</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+    {% include 'inc/chunks/_cases.html' %}
+    {% include 'inc/chunks/_form.html' %}
+		</main>
+
+
+{% endblock %}

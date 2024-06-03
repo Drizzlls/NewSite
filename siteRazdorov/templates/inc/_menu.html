@@ -21,12 +21,12 @@
 								<li class="menu__item">
 									<a href="#" class="menu__link _icon-dropdown" data-spoiler>Клиентам</a>
 									<ul class="submenu">
-										<li class="submenu__item"><a href="">Калькулятор стоимости банкротства</a></li>
-										<li class="submenu__item"><a href="">Отзывы наших клиентов</a></li>
-										<li class="submenu__item"><a href="">Завершенные дела</a></li>
-										<li class="submenu__item"><a href="">Основные вопросы</a></li>
+										<li class="submenu__item"><a href="{% url 'calculator' %}">Калькулятор стоимости банкротства</a></li>
+										<li class="submenu__item"><a href="{% url 'reviews' %}">Отзывы наших клиентов</a></li>
+										<li class="submenu__item"><a href="{% url 'cases' %}">Завершенные дела</a></li>
+										<li class="submenu__item"><a href="{% url 'faq' %}">Основные вопросы</a></li>
 										<li class="submenu__item"><a href="">Последствия банкротства</a></li>
-										<li class="submenu__item"><a href="">Скидки</a></li>
+										<li class="submenu__item"><a href="{% url 'sale' %}">Скидки</a></li>
 									</ul>
 								</li>
 								<li class="menu__item"><a href="#" class="menu__link">Основные вопросы</a></li>
@@ -35,7 +35,7 @@
 							</ul>
 							<ul class="menu__list">
 								<li class="menu__item"><a href="#" class="menu__link">Вакансии</a></li>
-								<li class="menu__item"><a href="#" class="menu__link">Сотрудничество</a></li>
+								<li class="menu__item"><a href="{% url 'cooperation' %}" class="menu__link">Сотрудничество</a></li>
 							</ul>
 						</nav>
 					</div>

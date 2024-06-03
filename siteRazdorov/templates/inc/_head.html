@@ -6,6 +6,12 @@
   Банкротство физических лиц
   {% endif %}
 </title>
+  {% if description %}
+  <meta name="description" content="{{ description }}">
+  {% else %}
+  <meta name="description" content="Деск не заполнен">
+  {% endif %}
+
 <meta charset="UTF-8">
 <meta name="format-detection" content="telephone=no">
 <link rel="stylesheet" href="{% static 'css/style.min.css' %}">

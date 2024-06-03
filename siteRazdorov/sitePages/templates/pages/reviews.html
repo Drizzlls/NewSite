@@ -1,0 +1,167 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<main class="page">
+			<nav class="breadcrumbs">
+				<div class="breadcrumbs__container">
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__item"><a href="{% url 'index' %}" class="breadcrumbs__link">Главная</a></li>
+						<li class="breadcrumbs__item"><span class="breadcrumbs__current">Отзывы клиентов</span>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<section class="reviews section-top section-bottom">
+				<div class="reviews__container">
+					<div class="content-block">
+						<div class="content-block__left">
+							<div class="content-block__line"></div>
+						</div>
+						<div class="content-block__info">
+							<h2 class="content-block__title title">Реальные отзывы людей полностью списавших свои долги</h2>
+							<div class="reviews__items">
+								<div class="review">
+									<div class="review__header header-review">
+										<div class="header-review__img -ibg">
+											<img src="{% static 'img/reviews/01.jpg' %}" alt="Image">
+										</div>
+										<div class="header-review__body">
+											<div class="header-review__title title title_h3">Гавриленко <br> Анна
+												Александровна
+											</div>
+											<ul class="header-review__parameters">
+												<li class="text">
+													<img src="{% static 'img/icons/reviews/01.svg' %}" alt="Image">
+													Ростовская область
+												</li>
+												<li class="text">
+													<img src="{% static 'img/icons/reviews/02.svg' %}" alt="Image">
+													Домохозяйка
+												</li>
+												<li class="text">
+													<img src="{% static 'img/icons/reviews/03.svg' %}" alt="Image">
+													Дело А53-20451/2021
+												</li>
+											</ul>
+											<strong>ДОЛГ СПИСАН</strong>
+										</div>
+									</div>
+									<div class="review__text text">
+										Компания Антона Раздорова действительно помогает людям в трудной ситуации с
+										кредитами. Лично у меня списали около 500 000 руб. Все прошло отлично.На протяжении
+										всего процесса мне присылали отчеты о проделанной работе, менеджер всегда был на
+										связи. Спасибо большое за помощь!!!
+									</div>
+									<div class="review__footer">
+										<button class="review__btn button" type="button" data-popup="#call">Хочу тоже
+											списать долги
+										</button>
+									</div>
+								</div>
+								<div class="review">
+									<div class="review__header header-review">
+										<div class="header-review__img -ibg">
+											<img src="{% static 'img/reviews/02.jpg' %}" alt="Image">
+										</div>
+										<div class="header-review__body">
+											<div class="header-review__title title title_h3">Терендий <br> Наталья
+												Викторовна
+											</div>
+											<ul class="header-review__parameters">
+												<li class="text">
+													<img src="{% static 'img/icons/reviews/01.svg' %}" alt="Image">
+													Ленинградская обл.
+												</li>
+												<li class="text">
+													<img src="{% static 'img/icons/reviews/02.svg' %}" alt="Image">
+													Занимается пошивом и ремонтом одежды
+												</li>
+												<li class="text">
+													<img src="{% static 'img/icons/reviews/03.svg' %}" alt="Image">
+													Дело А56-54393/2022
+												</li>
+											</ul>
+											<strong>ДОЛГ СПИСАН</strong>
+										</div>
+									</div>
+									<div class="review__text text">
+										Имела хорошую работу с возможностью подработки. Купила машину в кредит, конечно, но
+										оплачивала чётко, помогала детям(у меня внучок).Могли себе позволить ездить на море
+										каждый год. Но всё обрушилось в один момент. Заболела, воспаление лёгких. Как
+										следствие, осложнение на ноги(у меня заменён тазобедренный сустав).Работать, как
+										раньше уже не могла, только по норме. В итоге дали понять, что больные на
+										производстве не нужны. Стало тяжело платить по кредитам, пыталась устроиться, но з/п
+										была намного меньше суммы выплат. Честно-стала подумывать о суициде. Как то на глаза
+										попалась статья о банкротстве. Полгода вынашивала эту мысль, мониторила разные
+										компании, разговаривала с сотрудниками. По отзывам нашла компанию Антона Раздорова
+										и...решилась. Терять уже больше было нечего Заключили договор 30 марта
+										2022г.!Господи,как же я им благодарна. Всегда на связи, всегда всё
+										объяснят,поддержат.28.09.2022 г. было судебное заседание. И вот-я банкрот. Процесс,
+										конечно, ещё не до конца завершён, но теперь я спокойна. Не нужно боятся звонков и
+										приезда сотрудников банка. По моему совету в компанию обратились три моих знакомых.
+										Я знаю, что им так же помогут. Огромное спасибо компании Антона Раздорова!!!
+									</div>
+									<div class="review__footer">
+										<button class="review__btn button" type="button" data-popup="#call">Хочу тоже
+											списать долги
+										</button>
+									</div>
+								</div>
+								<div class="review">
+									<div class="review__header header-review">
+										<div class="header-review__img -ibg">
+											<img src="{% static 'img/reviews/03.jpg' %}" alt="Image">
+										</div>
+										<div class="header-review__body">
+											<div class="header-review__title title title_h3">Камышев <br> Виктор Николаевич
+											</div>
+											<ul class="header-review__parameters">
+												<li class="text">
+													<img src="{% static 'img/icons/reviews/01.svg' %}" alt="Image">
+													Ростовская обл.
+												</li>
+												<li class="text">
+													<img src="{% static 'img/icons/reviews/02.svg' %}" alt="Image">
+													Водитель
+												</li>
+												<li class="text">
+													<img src="{% static 'img/icons/reviews/03.svg' %}" alt="Image">
+													Дело А53-20451/2021
+												</li>
+											</ul>
+											<strong>ДОЛГ СПИСАН</strong>
+										</div>
+									</div>
+									<div class="review__text text">
+										Набрал займов в МФО, через интернет. Хотел перекрыть старый кредит, который уже не
+										помню на какие нужды брал, но накапали по нему большие проценты.Я сам таксист,
+										пробовал брать еще дополнительную работу ночную, чтобы перекрыть платеж ежемесячный
+										и еще деньги остались на еду, лекарства, жкх.Ничего не помогало, новые займы если
+										еще получалось платить, то старый просто висел грузом. Дочь где-то нашла информацию
+										о банкротстве, рассказала мне все и я согласился. Списал долги в компании Антона
+										Раздорова.Спасибо им большое!!!
+									</div>
+									<div class="review__footer">
+										<button class="review__btn button" type="button" data-popup="#call">Хочу тоже
+											списать долги
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="content-block__action">
+								<button class="content-block__btn button button_outline" type="button">Посмотреть ещё
+									отзывы
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+	{% include 'inc/chunks/_cases.html' %}
+	{% include 'inc/chunks/_quiz.html' %}
+	{% include 'inc/chunks/_form.html' %}
+
+		</main>
+
+{% endblock %}
