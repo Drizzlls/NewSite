@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from django.views import View
+from bitrixAPI.views import DataBitrix24
 
 class IndexPage(View):
     """ Главная страница """
