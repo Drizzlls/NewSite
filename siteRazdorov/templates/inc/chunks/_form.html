@@ -5,7 +5,8 @@
 						<img src="{% static 'img/cons-img.jpg' %}" alt="Image" class="consultation__img">
 						<h2 class="consultation__title title color-white">Закажите бесплатную консультацию</h2>
 						<div class="consultation__text text">Мы свяжемся с вами и ответим на все интересующие вопросы</div>
-						<form action="#" class="form">
+						<form action="#" class="form" method="post">
+							{% csrf_token %}
 							<div class="form__row">
 								<div class="form__column">
 									<label class="form__label" for="c-name">Имя*</label>

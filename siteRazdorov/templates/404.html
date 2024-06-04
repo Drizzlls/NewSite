@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<main class="page">
+<section class="instruction" style="text-align:center; margin: 7em 0">
+				<div class="instruction__container">
+					<div class="content-block">
+
+						<div class="content-block__info">
+							<h1 class="content-block__title title">404</h1>
+							<div class="content-block__text text">К сожалению, запрашиваемая страница не найдена. <br> Возможно, вы перешли по ссылке, в которой была допущена ошибка, или ресурс был удален.
+							</div>
+<a href="{% url 'index' %}" class="link-more" style="display:block">Вернуться на главную</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+
+{% endblock %}

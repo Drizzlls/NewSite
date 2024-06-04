@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.views import View
 
 class IndexPage(View):
@@ -83,3 +83,8 @@ class VacanciesPage(View):
 
     def get(self, request):
         return render(request, self.template_name)
+
+
+def notFoundPage(request, *args, **kwargs):
+    """ Страница '404' """
+    return render(request, '404.html', status=404)

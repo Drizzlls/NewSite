@@ -18,27 +18,28 @@
 						<div class="hero__form-title">
 							Узнайте, подходит ли процедура банкротства в&nbsp;вашем случае
 						</div>
-						<form action="#" class="form">
+						<form id="form">
+							{% csrf_token %}
 							<div class="form__row">
 								<div class="form__column">
 									<label class="form__label" for="name">Ваше имя<span>*</span></label>
 									<div class="form__input">
-										<input class="input" autocomplete="off" id="name" type="text" placeholder="Иван">
+										<input class="input" autocomplete="off" id="name" name="name" type="text" placeholder="Иван">
 									</div>
 								</div>
 							</div>
 							<div class="form__row">
 								<div class="form__column">
-									<label class="form__label" for="tel">Номер телефона<span>*</span></label>
+									<label class="form__label" for="phone">Номер телефона<span>*</span></label>
 									<div class="form__input">
-										<input class="input" autocomplete="off" id="tel" type="text" placeholder="+7 999 999 99 99">
+										<input class="input" autocomplete="off" id="phone" type="text" name="phone" placeholder="+7 999 999 99 99">
 									</div>
 								</div>
 							</div>
 							<div class="form__row">
 								<div class="form__column">
 									<label class="form__label">Сумма долга<span>*</span></label>
-									<select name="form[]" data-class-modif="debt">
+									<select name="dolg" data-class-modif="debt">
 										<option value="1" selected>250 000 ₽ - 500 000 ₽</option>
 										<option value="2">Пункт2</option>
 										<option value="3">Пункт3</option>
@@ -296,7 +297,7 @@
 									<div class="cases-main__slide swiper-slide">
 										<div class="case-item">
 											<a class="case-item__img -ibg" href="{% static 'img/cases/01/01.jpg' %}" data-gallery>
-												<img src="img/cases/01/01.jpg" alt="Image">
+												<img src="{% static 'img/cases/01/01.jpg' %}" alt="Image">
 											</a>
 											<div class="case-item__info">
 												<div class="info-item-items">
