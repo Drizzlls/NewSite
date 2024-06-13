@@ -15,6 +15,9 @@
 									банкротства и
 									<span>получите точную стоимость</span>
 								</div>
+								<form action="{% url 'handler' %}" method="post">
+									{% csrf_token %}
+									<input type="hidden" name="TITLE" id="title">
 								<div class="quiz__progress progress">
 									<div class="progress__title">Вопрос 1</div>
 									<div class="progress__line">
@@ -24,31 +27,31 @@
 								<div class="content-quiz__title">Какая у вас сумма долга?<span>*</span></div>
 								<div class="options">
 									<div class="options__item">
-										<input id="o1_1" class="options__input" checked="" type="radio" value="Какая у вас сумма долга? : от 300 000 ₽ до 500 000 ₽" name="option-1">
+										<input id="o1_1" class="options__input" checked="" type="radio" value="от 300 000 ₽ до 500 000 ₽" name="UF_CRM_1627289620">
 										<label for="o1_1" class="options__label">
 											<span class="options__text">от 300 000 ₽ до 500 000 ₽</span>
 										</label>
 									</div>
 									<div class="options__item">
-										<input id="o1_2" class="options__input" type="radio" value="Какая у вас сумма долга? : от 500 000 ₽ до 1 000 000 ₽" name="option-1">
+										<input id="o1_2" class="options__input" type="radio" value="от 500 000 ₽ до 1 000 000 ₽" name="UF_CRM_1627289620">
 										<label for="o1_2" class="options__label">
 											<span class="options__text">от 500 000 ₽ до 1 000 000 ₽</span>
 										</label>
 									</div>
 									<div class="options__item">
-										<input id="o1_3" class="options__input" type="radio" value="Какая у вас сумма долга? : от 1 000 000 ₽ до 2 000 000 ₽" name="option-1">
+										<input id="o1_3" class="options__input" type="radio" value="от 1 000 000 ₽ до 2 000 000 ₽" name="UF_CRM_1627289620">
 										<label for="o1_3" class="options__label">
 											<span class="options__text">от 1 000 000 ₽ до 2 000 000 ₽</span>
 										</label>
 									</div>
 									<div class="options__item">
-										<input id="o1_4" class="options__input" type="radio" value="Какая у вас сумма долга? : от 2 000 000 ₽ до 3 000 000 ₽" name="option-1">
+										<input id="o1_4" class="options__input" type="radio" value="от 2 000 000 ₽ до 3 000 000 ₽" name="UF_CRM_1627289620">
 										<label for="o1_4" class="options__label">
 											<span class="options__text">от 2 000 000 ₽ до 3 000 000 ₽</span>
 										</label>
 									</div>
 									<div class="options__item">
-										<input id="o1_5" class="options__input" type="radio" value="Какая у вас сумма долга? : более 3 000 000 ₽" name="option-1">
+										<input id="o1_5" class="options__input" type="radio" value="более 3 000 000 ₽" name="UF_CRM_1627289620">
 										<label for="o1_5" class="options__label">
 											<span class="options__text">более 3 000 000 ₽</span>
 										</label>
@@ -75,19 +78,19 @@
 								<div class="content-quiz__title">Подали ли на вас в суд кредиторы?<span>*</span></div>
 								<div class="options">
 									<div class="options__item">
-										<input id="o2_1" class="options__input" checked="" type="radio" value="Подали ли на вас в суд кредиторы? : Да" name="option-2">
+										<input id="o2_1" class="options__input" checked="" type="radio" value="Да" name="UF_CRM_1600427611284">
 										<label for="o2_1" class="options__label">
 											<span class="options__text">Да</span>
 										</label>
 									</div>
 									<div class="options__item">
-										<input id="o2_2" class="options__input" type="radio" value="Подали ли на вас в суд кредиторы? : Нет" name="option-2">
+										<input id="o2_2" class="options__input" type="radio" value="Нет" name="UF_CRM_1600427611284">
 										<label for="o2_2" class="options__label">
 											<span class="options__text">Нет</span>
 										</label>
 									</div>
 									<div class="options__item">
-										<input id="o2_3" class="options__input" type="radio" value="Подали ли на вас в суд кредиторы? : Нет, но грозятся" name="option-2">
+										<input id="o2_3" class="options__input" type="radio" value="Нет, но грозятся" name="UF_CRM_1600427611284">
 										<label for="o2_3" class="options__label">
 											<span class="options__text">Нет, но грозятся</span>
 										</label>
@@ -114,13 +117,13 @@
 								<div class="content-quiz__title">Есть ли у вас просрочки по кредитам?<span>*</span></div>
 								<div class="options">
 									<div class="options__item">
-										<input id="o3_1" class="options__input" checked="" type="radio" value="Есть ли у вас просрочки по кредитам? : Да" name="option-3">
+										<input id="o3_1" class="options__input" checked="" type="radio" value="Да" name="UF_CRM_1625646672">
 										<label for="o3_1" class="options__label">
 											<span class="options__text">Да</span>
 										</label>
 									</div>
 									<div class="options__item">
-										<input id="o3_2" class="options__input" type="radio" value="Есть ли у вас просрочки по кредитам? : Нет" name="option-3">
+										<input id="o3_2" class="options__input" type="radio" value="Нет" name="UF_CRM_1625646672">
 										<label for="o3_2" class="options__label">
 											<span class="options__text">Нет</span>
 										</label>
@@ -148,13 +151,13 @@
 									Обращались ли вы в другие организации?<span>*</span></div>
 								<div class="options">
 									<div class="options__item">
-										<input id="o4_1" class="options__input" checked="" type="radio" value="Обращались ли вы в другие организации? : Да" name="option-4">
+										<input id="o4_1" class="options__input" checked="" type="radio" value="Да" name="UF_CRM_5F649955DE13E">
 										<label for="o4_1" class="options__label">
 											<span class="options__text">Да</span>
 										</label>
 									</div>
 									<div class="options__item">
-										<input id="o4_2" class="options__input" type="radio" value="Обращались ли вы в другие организации? : Нет" name="option-4">
+										<input id="o4_2" class="options__input" type="radio" value="Нет" name="UF_CRM_5F649955DE13E">
 										<label for="o4_2" class="options__label">
 											<span class="options__text">Нет</span>
 										</label>
@@ -181,7 +184,7 @@
 								<div class="content-quiz__title">Сколько у вас кредиторов?<span>*</span></div>
 								<div class="form">
 									<div class="form__input">
-										<input class="input" autocomplete="off" type="text" value="1" id="count-credit" name="count-credit" placeholder="0">
+										<input class="input" autocomplete="off" type="text" value="1" id="count-credit" name="UF_CRM_1639566439" placeholder="0">
 									</div>
 								</div>
 							</div>
@@ -193,20 +196,19 @@
 								<div class="quiz__text title-subtitle">
 									Введите ваш номер телефона и получите расчет стоимости вашего банкротства
 								</div>
-								<form action="#" class="form">
 									<div class="form__row">
 										<div class="form__column">
 											<label class="form__label" for="nameq">Ваше имя<span>*</span></label>
 											<div class="form__input">
-												<input class="input" autocomplete="off" id="nameq" type="text" placeholder="Иван">
+												<input class="input" autocomplete="off" id="nameq" type="text" placeholder="Иван" name="NAME">
 											</div>
 										</div>
 									</div>
 									<div class="form__row">
 										<div class="form__column">
-											<label class="form__label" for="telq">Номер телефона<span>*</span></label>
+											<label class="form__label" for="PHONE">Номер телефона<span>*</span></label>
 											<div class="form__input">
-												<input class="input" autocomplete="off" id="telq" type="text" placeholder="+7 999 999 99 99">
+												<input class="input" autocomplete="off" type="text" placeholder="+7 999 999 99 99" name="PHONE" id="PHONE">
 											</div>
 										</div>
 									</div>
@@ -214,7 +216,7 @@
 										<div class="form__column">
 											<label class="form__label" for="place">Регион проживания</label>
 											<div class="form__input">
-												<input class="input" autocomplete="off" id="place" type="text" placeholder="Москва">
+												<input class="input" autocomplete="off" id="place" type="text" placeholder="Москва" name="REGION">
 											</div>
 										</div>
 										<div class="form__text">
@@ -224,15 +226,6 @@
 									</div>
 									<div class="form__row ">
 										<button class="form__button button" type="submit"><span class="content-xl">Получить стоимость своего банкротства</span><span class="content-xs">Получить рассчет</span></button>
-										<textarea autocomplete="off" name="form[]" hidden="hidden" placeholder="" data-error="Ошибка" class="form__textarea">
-Какая у вас сумма долга? : от 300 000 ₽ до 500 000 ₽
-
-Подали ли на вас в суд кредиторы? : Да
-
-Есть ли у вас просрочки по кредитам? : Да
-
-Обращались ли вы в другие организации? : Да
-Сколько у вас кредиторов? : 1</textarea>
 									</div>
 								</form>
 							</div>

@@ -9,10 +9,12 @@ class FormHandler(View):
     bitrixData = DataBitrix24()
     """ UC_UR5RJI """
     def post(self, request):
+        # print(request.POST)
         query = parse.urlparse(request.META.get('HTTP_REFERER')) ## Получаем путь страницы
         utmMarks = UtilsMethods.conversionUtmMakrs(parse_qs(query.query)) ## Достаем UTM
         dataFormRequest = UtilsMethods.dictionaryСonversion(request.POST) ## Получаем данные из request
-        self.bitrixData.addLead(data={**utmMarks, **dataFormRequest}) ## Отправляем в Битрикс24
+        print(dataFormRequest)
+        # self.bitrixData.addLead(data={**utmMarks, **dataFormRequest}) ## Отправляем в Битрикс24
         return redirect('index')
 
 

@@ -1,28 +1,23 @@
 {% load static %}
 <script src="{% static 'js/app.min.js' %}"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
 <script>
-$(document).ready(function () {
-  $("#form").on("submit", function (event) {
-    event.preventDefault(); // Отменяем стандартное поведение формы
-    var $data = {};
-    $('#form').find ('input, textearea, select').each(function() {
-      $data[this.name] = $(this).val();
-    });
-    b = window.location.search.replace( '?', '');
-    console.log(b)
+// Заполняем тайтл
+  let title = document.getElementById('title');
+  title.value =
+  {% if namePage %}
+  '{{namePage}}'
+  {% elif title %}
+  '{{title}}'
+  {% else %}
+    document.title
+  {% endif %};
+</script>
 
-    $.ajax({
-      url: "{% url 'handler' %}", // Здесь указываем URL-адрес серверного обработчика
-      type: "post",
-      data: $data,
-      success: function (response) {
-        console.log("Данные успешно отправлены!");
-      },
-      error: function (error) {
-        console.error("Ошибка при отправке данных: ", error);
-      },
-    });
-  });
+<script>
+$(function(){
+  // Маски
+  $("#PHONE").mask("+7 (999)-999-99-99"); // Телефон
 });
-  </script>
+</script>

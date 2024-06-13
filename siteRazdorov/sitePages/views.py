@@ -2,12 +2,14 @@ from django.shortcuts import render, redirect
 from django.views import View
 from bitrixAPI.views import DataBitrix24
 
+
 class IndexPage(View):
     """ Главная страница """
     template_name = 'pages/index.html'
     context = {
         'title' : 'Заполненный Title',
-        'description' : 'Описание страницы'
+        'description' : 'Описание страницы',
+        'namePage' : 'Название страницы для Битрикса'
     }
 
     def get(self, request):
