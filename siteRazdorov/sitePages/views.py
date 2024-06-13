@@ -3,6 +3,7 @@ from django.views import View
 from bitrixAPI.views import DataBitrix24
 
 
+
 class IndexPage(View):
     """ Главная страница """
     template_name = 'pages/index.html'

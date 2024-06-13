@@ -18,7 +18,7 @@
 						<div class="hero__form-title">
 							Узнайте, подходит ли процедура банкротства в&nbsp;вашем случае
 						</div>
-						<form id="form">
+						<form id="form" method="post" action="{% url 'handler' %}">
 							{% csrf_token %}
 							<div class="form__row">
 								<div class="form__column">
