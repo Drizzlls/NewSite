@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<main class="page page_post">
+			<nav class="breadcrumbs">
+				<div class="breadcrumbs__container">
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__item"><a href="{% url 'index' %}" class="breadcrumbs__link">Главная</a></li>
+						<li class="breadcrumbs__item"><a href="{% url 'articles' %}" class="breadcrumbs__link">Статьи</a></li>
+						<li class="breadcrumbs__item"><span class="breadcrumbs__current">{{ article.title }}</span>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<section class="post section-top section-bottom">
+				<div class="post__container">
+					<div class="content-block">
+						<div class="content-block__left">
+							<div class="content-block__line"></div>
+							<div class="company-leader" data-da=".post .content-block__info, 991.98,1">
+								<img src="/media/{{article.image}}" alt="Image">
+							</div>
+						</div>
+						<div class="content-block__info">
+							<h1 class="content-block__title title">{{ article.title }}</h1>
+							<div class="post-text text">
+								<div class="post-text__item">
+
+										 {{ article.content|safe }}
+
+								</div>
+
+							</div>
+							<div class="video-block">
+								<div class="video-block__value">
+									<div class="video-block__inner">
+										<picture>
+											<source srcset="https:\\img.youtube.com/vi_webp/IBwIbaGlplU/maxresdefault.webp" type="image/webp">
+											<img src="https:\\img.youtube.com/vi/IBwIbaGlplU/maxresdefault.jpg" alt="Image">
+										</picture>
+										<button class="video-btn" type="button" data-video-id="IBwIbaGlplU">
+											<svg height="100%" viewBox="0 0 54 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M51.4824 26.6679C54.8205 28.5914 54.8205 33.4086 51.4824 35.3322L7.49649 60.68C4.16316 62.6009 2.10425e-07 60.195 3.78906e-07 56.3478L2.59903e-06 5.65216C2.76752e-06 1.80496 4.16316 -0.60089 7.4965 1.32001L51.4824 26.6679Z"></path>
+											</svg>
+											<span class="video-btn__text">
+												Смотреть видео
+											</span>
+										</button>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+	{% include 'inc/chunks/_cases.html' %}
+	{% include 'inc/chunks/_quiz.html' %}
+	{% include 'inc/chunks/_form.html' %}
+
+		</main>
+
+{% endblock %}

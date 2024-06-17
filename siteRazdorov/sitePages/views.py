@@ -1,7 +1,7 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.views import View
 from bitrixAPI.views import DataBitrix24
-
+from .models import Article
 
 
 class IndexPage(View):
@@ -26,10 +26,18 @@ class AboutPage(View):
 
 class ArticlesPage(View):
     """ Страница 'Статьи' """
-    template_name = 'pages/articles.html'
+    template_name = 'pages/articles/articles.html'
 
     def get(self, request):
         return render(request, self.template_name)
+
+class ArticlePage(View):
+    """ Страница Определенной статьи """
+    template_name = 'pages/articles/article.html'
+
+    def get(self, request, slug):
+        article = get_object_or_404(Article, slug=slug)
+        return render(request, self.template_name, {'article': article})
 
 class ContactsPage(View):
     """ Страница 'Контакты' """

@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<main class="page">
+			<nav class="breadcrumbs">
+				<div class="breadcrumbs__container">
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__item"><a href="/" class="breadcrumbs__link">Главная</a></li>
+						<li class="breadcrumbs__item"><span class="breadcrumbs__current">Статьи</span>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<section class="news section-top section-bottom">
+				<div class="news__container">
+					<div class="content-block _slider">
+						<div class="content-block__left">
+							<div class="content-block__line"></div>
+							<div class="swiper-controls">
+								<button type="button" class="swiper-button swiper-button-prev _icon-dropdown swiper-button-disabled" disabled=""></button>
+								<button type="button" class="swiper-button swiper-button-next _icon-dropdown"></button>
+							</div>
+
+						</div>
+						<div class="content-block__info">
+							<h2 class="content-block__title title">Свежие статьи и новости</h2>
+							<div class="news__body swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
+								<div class="news__wrapper swiper-wrapper">
+									{% for article in allArticles %}
+									<div class="news__slide swiper-slide swiper-slide-active" style="width: 425px; margin-right: 40px;">
+										<div class="item-news">
+											<div class="item-news__img -ibg">
+												{% if article.image %}
+												<img src="/media/{{ article.image }}" alt="{{ article.title }}">
+												{% else %}
+												<img src="/static/img/blog/02.jpg" alt="{{ article.title }}">
+												{% endif %}
+											</div>
+											<div class="item-news__body">
+												<div class="item-news__title title_h3 title">
+													{{ article.title }}
+												</div>
+												<div class="item-news__text text">
+													{{ article.content|safe|truncatewords:21 }}
+												</div>
+											</div>
+											<div class="item-news__footer">
+												<a href="" class="link-more _icon-ar-right">Читать полностью</a>
+
+											</div>
+										</div>
+									</div>
+									{% endfor %}
+								</div>
+							</div>
+							<div class="news__more">
+								<button class="news__btn button button_outline" type="button">Больше статей</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+	{% include 'inc/chunks/_cases.html' %}
+	{% include 'inc/chunks/_quiz.html' %}
+	{% include 'inc/chunks/_form.html' %}
+
+		</main>
+
+{% endblock %}

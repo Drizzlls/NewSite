@@ -1,13 +1,20 @@
 from django.urls import path, include
 from django.views.generic import TemplateView
 from django.contrib.auth import views, urls
-from .views import IndexPage, AboutPage, ArticlesPage,ContactsPage, CooperationPage, ReviewsPage, CasesPage, FAQPage, CalcPage, SalePage, VacanciesPage
+
+from django.conf import settings
+from django.conf.urls.static import static
+
+from .views import IndexPage, AboutPage, ArticlesPage,ContactsPage, CooperationPage, ReviewsPage, CasesPage, FAQPage, CalcPage, SalePage, VacanciesPage, ArticlePage
 from .utils import FormHandler
 
 urlpatterns = [
     path('', IndexPage.as_view(), name='index'),
     path('about/', AboutPage.as_view(), name='about'),
-    path('news/', ArticlesPage.as_view(), name='news'),
+
+    path('articles/', ArticlesPage.as_view(), name='articles'),
+    path('articles/<str:slug>/', ArticlePage.as_view(), name='article'),
+
     path('contacts/', ContactsPage.as_view(), name='contacts'),
     path('cooperation/', CooperationPage.as_view(), name='cooperation'),
     path('reviews/', ReviewsPage.as_view(), name='reviews'),
@@ -20,4 +27,9 @@ urlpatterns = [
     path('ckeditor/', include('ckeditor_uploader.urls')),
 
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL,
+                          document_root=settings.MEDIA_ROOT)
+
 handler404 = 'sitePages.views.notFoundPage'

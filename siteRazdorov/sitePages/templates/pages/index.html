@@ -472,40 +472,27 @@
 							<h2 class="content-block__title title">Свежие статьи и новости</h2>
 							<div class="blog-main__body swiper">
 								<div class="blog-main__wrapper swiper-wrapper">
+									{% for article in allArticles %}
 									<div class="blog-main__slide swiper-slide">
-										<div class="blog-item" style="background-image: url({% static 'img/blog/01.jpg' %})">
+										{% if article.image %}
+													<div class="blog-item" style="background-image: url(media/{{ article.image }})">
+												{% else %}
+													<div class="blog-item" style="background-image: url(/static/img/blog/02.jpg)">
+												{% endif %}
 											<div class="blog-item__title title title_h3">
-												Какую карту завести, чтобы ее не арестовали судебные приставы?
+												{{ article.title }}
 											</div>
 											<div class="blog-item__overlay">
-												<a href="" class="blog-item__btn button">Читать</a>
+												<a href="{% url 'article' article.slug %}" class="blog-item__btn button">Читать</a>
 											</div>
 										</div>
 									</div>
-									<div class="blog-main__slide swiper-slide">
-										<div class="blog-item" style="background-image: url({% static 'img/blog/02.jpg' %})">
-											<div class="blog-item__title title title_h3">
-												Банкротство физ. лиц. <br> Как избавиться от долгов по&nbsp;закону
-											</div>
-											<div class="blog-item__overlay">
-												<a href="" class="blog-item__btn button">Читать</a>
-											</div>
-										</div>
-									</div>
-									<div class="blog-main__slide swiper-slide">
-										<div class="blog-item" style="background-image: url({% static 'img/blog/02.jpg' %})">
-											<div class="blog-item__title title title_h3">
-												Банкротство физ. лиц. Как избавиться от долгов по закону
-											</div>
-											<div class="blog-item__overlay">
-												<a href="" class="blog-item__btn button">Читать</a>
-											</div>
-										</div>
-									</div>
+									{% endfor %}
+
 								</div>
 							</div>
 							<div class="blog-main__action">
-								<a href="" class="blog-main__btn button button_outline">Читать больше статей</a>
+								<a href="{% url 'articles' %}" class="blog-main__btn button button_outline">Читать больше статей</a>
 							</div>
 						</div>
 					</div>
