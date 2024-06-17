@@ -24,15 +24,15 @@ class AboutPage(View):
     def get(self, request):
         return render(request, self.template_name)
 
-class NewsPage(View):
-    """ Страница 'Новости' """
-    template_name = 'pages/news.html'
+class ArticlesPage(View):
+    """ Страница 'Статьи' """
+    template_name = 'pages/articles.html'
 
     def get(self, request):
         return render(request, self.template_name)
 
 class ContactsPage(View):
-    """ Страница 'Новости' """
+    """ Страница 'Контакты' """
     template_name = 'pages/contacts.html'
 
     def get(self, request):
