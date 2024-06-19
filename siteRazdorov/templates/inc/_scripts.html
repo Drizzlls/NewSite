@@ -26,7 +26,7 @@ $(function(){
 function getIPFromAmazon() {
   fetch('https://checkip.amazonaws.com/')
     .then((res) => res.text())
-    .then((data) => console.log(data));
+    .then((data) => localStorage.setItem("IPClient", data));
 }
 
 getIPFromAmazon();
@@ -40,6 +40,7 @@ getIPFromAmazon();
   	if (localStorage.getItem("referSite"))
     {
       if (referSite != locationHost && referSite != localStorage.getItem("referSite")){
+      console.log('Создал новый стораж');
         localStorage.setItem("referSite", referSite);
       }
       else{
@@ -51,3 +52,11 @@ getIPFromAmazon();
   }
 </script>
 
+<script>
+// Создаю новые поля в формах
+const inputIp = document.createElement('input');
+inputIp.type = 'text';
+inputIp.name = 'IP';
+inputIp.value = localStorage.getItem("IPClient");
+Array.from(document.getElementsByTagName('form')).forEach(item => console.log(item));
+</script>
