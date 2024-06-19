@@ -31,3 +31,23 @@ function getIPFromAmazon() {
 
 getIPFromAmazon();
 </script>
+
+
+<script>
+  let referSite = new URL(document.referrer).hostname;
+  let locationHost = window.location.host;
+
+  	if (localStorage.getItem("referSite"))
+    {
+      if (referSite != locationHost && referSite != localStorage.getItem("referSite")){
+        localStorage.setItem("referSite", referSite);
+      }
+      else{
+      }
+    }
+
+  else{
+   localStorage.setItem("referSite", referSite);
+  }
+</script>
+
