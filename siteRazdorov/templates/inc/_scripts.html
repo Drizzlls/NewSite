@@ -1,6 +1,7 @@
 {% load static %}
 <script src="{% static 'js/app.min.js' %}"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
 <script>
 // Заполняем тайтл
@@ -40,7 +41,6 @@ getIPFromAmazon();
   	if (localStorage.getItem("referSite"))
     {
       if (referSite != locationHost && referSite != localStorage.getItem("referSite")){
-      console.log('Создал новый стораж');
         localStorage.setItem("referSite", referSite);
       }
       else{
@@ -53,10 +53,23 @@ getIPFromAmazon();
 </script>
 
 <script>
-// Создаю новые поля в формах
-const inputIp = document.createElement('input');
-inputIp.type = 'text';
-inputIp.name = 'IP';
-inputIp.value = localStorage.getItem("IPClient");
-Array.from(document.getElementsByTagName('form')).forEach(item => console.log(item));
+    $(document).ready(function () {
+        $('form').submit(function () {
+        var ipClient = localStorage.getItem("IPClient");
+        var referSite = localStorage.getItem("referSite");
+            $.ajax({
+                data: $(this).serialize()+'&referSite='+referSite+'&ipClient='+ipClient,
+                type: $(this).attr('method'),
+                url: '{% url 'handler' %}',
+                success: function (response) {
+      			 if (response == "True") {
+                  console.log('Все ок');
+                } else {
+                alert(response); }
+                },
+
+            });
+            return false;
+        });
+    })
 </script>

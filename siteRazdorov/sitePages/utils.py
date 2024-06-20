@@ -1,5 +1,6 @@
 import pprint
 
+from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from django.views import View
 from urllib import parse
@@ -11,17 +12,17 @@ class FormHandler(View):
     bitrixData = DataBitrix24()
     """ UC_UR5RJI """
     def post(self, request):
-        # print(request.POST)
+        print(request.POST)
         query = parse.urlparse(request.META.get('HTTP_REFERER')) ## Получаем путь страницы
         utmMarks = UtilsMethods.conversionUtmMakrs(parse_qs(query.query)) ## Достаем UTM
         dataFormRequest = UtilsMethods.dictionaryСonversion(request) ## Получаем данные из request
         print(dataFormRequest)
         # self.bitrixData.addLead(data={**utmMarks, **dataFormRequest}) ## Отправляем в Битрикс24
-        return redirect('index')
+        return HttpResponse(True)
 
 class UtilsMethods:
     @staticmethod
-    def dictionaryСonversion(request):
+    def dictionaryСonversion(request: dict) -> dict:
         """ Преобразование словаря """
         newDict = {}
         for k, v in request.POST.items():
@@ -29,11 +30,11 @@ class UtilsMethods:
                 newDict[k] = [{'VALUE': v, 'VALUE_TYPE': 'WORK'}]
             else:
                 newDict[k] = v
-        newDict['IP'] = UtilsMethods.getIpUser(request)
+        newDict['ipClient'] = newDict['ipClient'].strip('\n')
         return newDict
 
     @staticmethod
-    def conversionUtmMakrs(data):
+    def conversionUtmMakrs(data: dict) -> dict:
         """ Преобразование словаря с UTM метками """
         utm = ['UTM_SOURCE', 'UTM_MEDIUM', 'UTM_CAMPAIGN', 'UTM_CONTENT',  'UTM_TERM']
         marks = {}

@@ -42,7 +42,8 @@
 							ближайшее
 							время
 						</div>
-						<form action="#" class="form">
+						<form class="form" method="post">
+							{% csrf_token %}
 							<div class="form__row">
 								<div class="form__column">
 									<label class="form__label" for="p-name">Имя*</label>
