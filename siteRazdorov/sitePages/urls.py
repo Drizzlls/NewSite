@@ -5,8 +5,7 @@ from django.contrib.auth import views, urls
 from django.conf import settings
 from django.conf.urls.static import static
 
-from .views import IndexPage, AboutPage, ArticlesPage,ContactsPage, CooperationPage, ReviewsPage, CasesPage, FAQPage, CalcPage, SalePage, VacanciesPage, ArticlePage
-from .utils import FormHandler
+from .views import IndexPage, AboutPage, ArticlesPage,ContactsPage, CooperationPage, ReviewsPage, CasesPage, FAQPage, CalcPage, SalePage, VacanciesPage, ArticlePage, FormHandler
 
 urlpatterns = [
     path('', IndexPage.as_view(), name='index'),

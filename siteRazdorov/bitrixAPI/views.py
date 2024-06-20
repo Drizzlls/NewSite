@@ -13,6 +13,5 @@ class DataBitrix24:
     def addLead(self, data):
         self.bx24.callMethod('crm.lead.add', fields={
             "STATUS_ID": "UC_UR5RJI",
-            "TITLE":"Новый лид",
             **data
         })

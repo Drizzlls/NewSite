@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Article
+from .models import Article,Client
 from ckeditor.widgets import CKEditorWidget
 
 class ArticleAdmin(admin.ModelAdmin):
@@ -7,4 +7,5 @@ class ArticleAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Article, ArticleAdmin)
+admin.site.register(Client)
 

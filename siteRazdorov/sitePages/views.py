@@ -1,7 +1,9 @@
+from django.http import HttpResponse
 from django.shortcuts import render, redirect, get_object_or_404
 from django.views import View
 from bitrixAPI.views import DataBitrix24
 from .models import Article
+from .utils import Client
 
 
 class IndexPage(View):
@@ -100,3 +102,11 @@ class VacanciesPage(View):
 def notFoundPage(request, *args, **kwargs):
     """ Страница '404' """
     return render(request, '404.html', status=404)
+
+
+class FormHandler(View):
+        """ UC_UR5RJI """
+        def post(self, request):
+            client = Client(request=request)
+            client.clientAdd()
+            return HttpResponse(True)
