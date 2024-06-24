@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<main class="page">
+			<nav class="breadcrumbs">
+				<div class="breadcrumbs__container">
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Главная</a></li>
+						<li class="breadcrumbs__item"><span class="breadcrumbs__current">Спасибо за заявку</span>
+						</li>
+					</ul>
+				</div>
+			</nav>
+<section class="news section-top section-bottom">
+				<div class="news__container">
+					<div class="content-block _slider">
+						<div class="content-block__left">
+							<div class="content-block__line"></div>
+
+						</div>
+
+						<div class="content-block__info" style="text-align:center">
+							<h2 class="content-block__title title">Спасибо за заявку! Мы свяжемся с Вами в ближайшее время</h2>
+
+						<div class="vacancies__text">
+<p>Посмотрите обращение Антона Раздорова, владельца компании "Раздоров и компания", <br>чтобы понимать, что вы сделали
+правильный выбор</p>
+								</div>
+							<iframe width="100%" height="350" src="https://www.youtube.com/embed/zyHTsUGGJWI?si=UhpNW_aJcpOcDKYR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						<a class="button button_outline" style="margin-top:1em" href="{% url 'index' %}">Вернуться на главную</a>
+
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+
+{% endblock %}

@@ -5,7 +5,7 @@ from django.contrib.auth import views, urls
 from django.conf import settings
 from django.conf.urls.static import static
 
-from .views import IndexPage, AboutPage, ArticlesPage,ContactsPage, CooperationPage, ReviewsPage, CasesPage, FAQPage, CalcPage, SalePage, VacanciesPage, ArticlePage, FormHandler
+from .views import IndexPage, AboutPage, ArticlesPage,ContactsPage, CooperationPage, ReviewsPage, CasesPage, FAQPage, CalcPage, SalePage, VacanciesPage, ArticlePage, FormHandler, ThanksPage
 
 urlpatterns = [
     path('', IndexPage.as_view(), name='index'),
@@ -23,7 +23,12 @@ urlpatterns = [
     path('sale/', SalePage.as_view(), name='sale'),
     path('vacancies/', VacanciesPage.as_view(), name='vacancies'),
     path('handler/', FormHandler.as_view(), name='handler'),
+
+    path('thanks/', ThanksPage.as_view(), name='thanks'),
+
     path('ckeditor/', include('ckeditor_uploader.urls')),
+
+
 
 ]
 

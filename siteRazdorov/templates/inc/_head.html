@@ -2,14 +2,23 @@
 <title>
   {% if title %}
   {{ title }}
+  {% elif namePage %}
+  {{namePage}}
   {% else %}
-  Банкротство физических лиц
+    Банкротство физических лиц
   {% endif %}
 </title>
   {% if description %}
   <meta name="description" content="{{ description }}">
   {% else %}
-  <meta name="description" content="Деск не заполнен">
+  <meta name="description" content="Банкротство физических лиц">
+  {% endif %}
+  {% if namePage %}
+  <input type="hidden" id="namePage" value="{{ namePage }}">
+  {% elif title %}
+  <input type="hidden" id="namePage" value="{{ title }}">
+  {% else %}
+  <input type="hidden" id="namePage" value="None">
   {% endif %}
 
 <meta charset="UTF-8">

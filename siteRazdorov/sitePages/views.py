@@ -99,6 +99,14 @@ class VacanciesPage(View):
         return render(request, self.template_name)
 
 
+class ThanksPage(View):
+    """ Страница 'Спасибо' """
+    template_name = 'pages/thanks.html'
+
+    def get(self, request):
+        return render(request, self.template_name)
+
+
 def notFoundPage(request, *args, **kwargs):
     """ Страница '404' """
     return render(request, '404.html', status=404)

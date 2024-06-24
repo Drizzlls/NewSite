@@ -24,7 +24,7 @@
 								<div class="form__column">
 									<label class="form__label" for="name">Ваше имя<span>*</span></label>
 									<div class="form__input">
-										<input class="input" autocomplete="off" id="name" name="NAME" type="text" placeholder="Иван">
+										<input class="input" autocomplete="off" id="name" name="NAME" type="text" placeholder="Иван" required>
 									</div>
 								</div>
 							</div>
@@ -32,18 +32,19 @@
 								<div class="form__column">
 									<label class="form__label" for="phone">Номер телефона<span>*</span></label>
 									<div class="form__input">
-										<input class="input" autocomplete="off" id="phone" type="text" name="PHONE" placeholder="+7 999 999 99 99">
+										<input class="input" autocomplete="off" id="phone" type="text" name="PHONE" placeholder="+7 999 999 99 99" required>
 									</div>
 								</div>
 							</div>
 							<div class="form__row">
 								<div class="form__column">
 									<label class="form__label">Сумма долга<span>*</span></label>
-									<select name="dolg" data-class-modif="debt">
-										<option value="1" selected>250 000 ₽ - 500 000 ₽</option>
-										<option value="2">Пункт2</option>
-										<option value="3">Пункт3</option>
-										<option value="4">Пункт4</option>
+									<select data-class-modif="debt" name="UF_CRM_1627289620">
+										<option value="от 300 000 ₽ до 500 000 ₽" selected>от 300 000 ₽ до 500 000 ₽</option>
+										<option value="от 500 000 ₽ до 1 000 000 ₽">от 500 000 ₽ до 1 000 000 ₽</option>
+										<option value="от 1 000 000 ₽ до 2 000 000 ₽">от 1 000 000 ₽ до 2 000 000 ₽</option>
+										<option value="от 2 000 000 ₽ до 3 000 000 ₽">от 2 000 000 ₽ до 3 000 000 ₽</option>
+										<option value="более 3 000 000 ₽">более 3 000 000 ₽</option>
 									</select>
 								</div>
 								<div class="form__text">

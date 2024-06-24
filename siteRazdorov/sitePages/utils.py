@@ -17,7 +17,7 @@ class Client:
         """ Добавляем клиента """
         data = self.treatmentData()
         pprint.pprint(data)
-        saveDB = self.clientSaveForDB(data=data)
+        # saveDB = self.clientSaveForDB(data=data)
 
     def clientSaveForDB(self, data):
         """ Сохраняем клиента в базу """

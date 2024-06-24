@@ -6446,6 +6446,10 @@ PERFORMANCE OF THIS SOFTWARE.
         curMap.classList.add("map_active");
         curMap.hidden = false;
     }
+
+
+
+
     if (document.querySelector(".map")) {
         const maps = document.querySelectorAll(".map"), mapActive = document.querySelector(".map.map_active");
         maps.forEach((map => {
@@ -6466,3 +6470,4 @@ PERFORMANCE OF THIS SOFTWARE.
     });
     videoYoutube();
 })();
+
