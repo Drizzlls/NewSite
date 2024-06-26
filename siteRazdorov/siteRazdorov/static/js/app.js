@@ -6437,7 +6437,7 @@ PERFORMANCE OF THIS SOFTWARE.
         optionsInputCheck.forEach((item => {
             details += "\n" + item.value + "\n";
         }));
-        document.querySelector(".form__textarea").innerHTML = details + "Сколько у вас кредиторов?" + " : " + countCredit.value;
+
     }
     function trackContentChangeOnClick(element) {
         const activeMap = document.querySelector(".map.map_active");

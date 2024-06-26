@@ -6,6 +6,10 @@ class ArticleAdmin(admin.ModelAdmin):
     prepopulated_fields = {'slug': ('title',)}
 
 
+class ClientAdmin(admin.ModelAdmin):
+    list_display = ('phone', 'date', 'page')
+
+
 admin.site.register(Article, ArticleAdmin)
-admin.site.register(Client)
+admin.site.register(Client, ClientAdmin)
 

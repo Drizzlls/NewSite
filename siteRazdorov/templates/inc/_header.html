@@ -2,6 +2,7 @@
 <header class="header">
 			<div class="header-top">
 				<div class="header-top__container">
+					{% comment %}
 					<div class="header-top__city city-header" data-spoilers="767.98" data-da=".menu__body, 767.98,first">
 						<button class="city-header__link _icon-dropdown" type="button" data-spoiler><span class="city-header__link-mobile">Ваш город (<span>г. Ростов-на-Дону</span>)</span><span class="city-header__link-pk">г. Ростов-на-Дону</span></button>
 						<ul class="city-header__wrapper">
@@ -10,12 +11,15 @@
 							<li><a href="">г. Санкт-Петербург</a></li>
 						</ul>
 					</div>
+					{% endcomment %}
 					<div class="header-top__search search-header">
-<!--						<form action="#" class="search-box">-->
-<!--							<input class="search-box__input" autocomplete="off" type="text" placeholder="Найти">-->
-<!--							<button class="search-box__btn _icon-search" type="submit"></button>-->
-<!--						</form>-->
-<!--						<button class="search-header__btn _icon-search" type="button">Поиск по сайту</button>-->
+						{% comment %}
+						<form action="#" class="search-box">
+							<input class="search-box__input" autocomplete="off" type="text" placeholder="Найти">
+							<button class="search-box__btn _icon-search" type="submit"></button>
+						</form>
+						<button class="search-header__btn _icon-search" type="button">Поиск по сайту</button>
+						{% endcomment %}
 					</div>
 				</div>
 

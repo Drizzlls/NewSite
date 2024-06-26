@@ -17,7 +17,7 @@ class Client:
         """ Добавляем клиента """
         data = self.treatmentData()
         pprint.pprint(data)
-        # saveDB = self.clientSaveForDB(data=data)
+        saveDB = self.clientSaveForDB(data=data)
 
     def clientSaveForDB(self, data):
         """ Сохраняем клиента в базу """
@@ -38,7 +38,6 @@ class Client:
         except Exception as e:
             print(f'Ошибка - {e}')
 
-        pass
 
     def clientSendForBitrix24(self, data):
         """ Отправляем данные в Битрикс24 """
@@ -63,7 +62,7 @@ class UtilsMethods:
             else:
                 newDict[k] = v
         newDict['ipClient'] = newDict['ipClient'].strip('\n')
-        newDict['page'] = request.META.get('HTTP_REFERER')
+        newDict['page'] = request.META.get('HTTP_REFERER').split('?')[0]
         return newDict
 
     @staticmethod

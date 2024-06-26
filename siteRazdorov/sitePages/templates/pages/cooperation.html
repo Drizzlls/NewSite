@@ -86,12 +86,13 @@
 				<div class="consultation__container">
 					<div class="consultation__inner">
 						<h2 class="consultation__title title color-white">Чтобы стать нашим <br> партнером, заполните заявку, и&nbsp;наш менеджер свяжется с вами для уточнения деталей.</h2>
-						<form action="#" class="form">
+						<form id="FORM" class="form" method="post">
+							{% csrf_token %}
 							<div class="form__row">
 								<div class="form__column">
 									<label class="form__label" for="c-name">Имя*</label>
 									<div class="form__input">
-										<input class="input" autocomplete="off" id="c-name" type="text" placeholder="Иван">
+										<input class="input" autocomplete="off" id="c-name" type="text" placeholder="Иван" name="NAME" required>
 									</div>
 								</div>
 							</div>
@@ -107,7 +108,7 @@
 								<div class="form__column">
 									<label class="form__label" for="c-tel">Номер телефона*</label>
 									<div class="form__input">
-										<input class="input" autocomplete="off" id="c-tel" type="text" placeholder="+7 999 999 99 99">
+										<input class="input" autocomplete="off" id="c-tel" type="text" placeholder="+7 999 999 99 99" name="PHONE" required>
 									</div>
 								</div>
 								<div class="form__text">

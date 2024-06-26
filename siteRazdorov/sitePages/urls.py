@@ -22,10 +22,10 @@ urlpatterns = [
     path('calculator/', CalcPage.as_view(), name='calculator'),
     path('sale/', SalePage.as_view(), name='sale'),
     path('vacancies/', VacanciesPage.as_view(), name='vacancies'),
-    path('handler/', FormHandler.as_view(), name='handler'),
-
     path('thanks/', ThanksPage.as_view(), name='thanks'),
 
+
+    path('handler/', FormHandler.as_view(), name='handler'),
     path('ckeditor/', include('ckeditor_uploader.urls')),
 
 

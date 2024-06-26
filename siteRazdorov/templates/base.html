@@ -1,32 +1,19 @@
 {% load static %}
 {% load castomTags %}
-
 {% getAllArcticles as allArticles %}
-
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-	{% block head %}
-	{% include 'inc/_head.html' %}
-	{% endblock %}
-</head>
-
+<head>{% block head %} {% include 'inc/_head.html' %} {% endblock %}</head>
 <body>
 	<div class="wrapper">
 		{% block header %}
 			{% include 'inc/_header.html' %}
 		{% endblock %}
-
-
 		{% block content %}
 		{% endblock %}
-
 		{% block footer %}
 			{% include 'inc/_footer.html' %}
 		{% endblock %}
-
-
 	</div>
 	<div id="call" aria-hidden="true" class="popup">
 		<div class="popup__wrapper">

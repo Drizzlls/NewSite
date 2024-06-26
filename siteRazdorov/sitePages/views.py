@@ -10,9 +10,7 @@ class IndexPage(View):
     """ Главная страница """
     template_name = 'pages/index.html'
     context = {
-        'title' : 'Заполненный Title',
-        'description' : 'Описание страницы',
-        'namePage' : 'Название страницы для Битрикса'
+
     }
 
     def get(self, request):
@@ -22,9 +20,11 @@ class IndexPage(View):
 class AboutPage(View):
     """ Страница 'О нас' """
     template_name = 'pages/about.html'
+    context = {
 
+    }
     def get(self, request):
-        return render(request, self.template_name)
+        return render(request, self.template_name, context=self.context)
 
 class ArticlesPage(View):
     """ Страница 'Статьи' """
