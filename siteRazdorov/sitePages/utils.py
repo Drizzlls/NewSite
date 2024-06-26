@@ -6,6 +6,7 @@ from urllib import parse
 from urllib.parse import parse_qs
 from bitrixAPI.views import DataBitrix24
 from .models import Client as ClientDB
+from bitrixAPI.utils import DataBitrix24
 
 
 class Client:
@@ -17,7 +18,8 @@ class Client:
         """ Добавляем клиента """
         data = self.treatmentData()
         pprint.pprint(data)
-        saveDB = self.clientSaveForDB(data=data)
+        # saveDB = self.clientSaveForDB(data=data)
+        # addLead = self.clientSendForBitrix24(data=data)
 
     def clientSaveForDB(self, data):
         """ Сохраняем клиента в базу """
@@ -41,7 +43,8 @@ class Client:
 
     def clientSendForBitrix24(self, data):
         """ Отправляем данные в Битрикс24 """
-        pass
+        dataBitrix = DataBitrix24()
+        addLead = dataBitrix.addLead(data)
 
     def treatmentData(self) -> dict:
         """ Обрабатываем данные, которые получили на входе """

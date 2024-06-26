@@ -10,7 +10,7 @@ class IndexPage(View):
     """ Главная страница """
     template_name = 'pages/index.html'
     context = {
-
+        'namePage':'Главная страница'
     }
 
     def get(self, request):
@@ -52,8 +52,12 @@ class CooperationPage(View):
     """ Страница 'Сотрудничество' """
     template_name = 'pages/cooperation.html'
 
+    context = {
+        'namePage': 'Сотрудничество'
+    }
+
     def get(self, request):
-        return render(request, self.template_name)
+        return render(request, self.template_name, context=self.context)
 
 class ReviewsPage(View):
     """ Страница 'Отзывы клиентов' """
