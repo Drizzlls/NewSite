@@ -22,35 +22,57 @@
 								<option value="2">Москва</option>
 								<option value="3">Санкт-Петербург</option>
 							</select>
-								<div class="select__body">
-									<button type="button" class="select__title">
-										<span class="select__value">
-											<span class="select__content">Ростов-на-Дону</span>
-										</span>
-									</button>
-									<div hidden="" class="select__options">
-										<div class="select__scroll">
-											<button hidden="" class="select__option" data-value="1" type="button">Ростов-на-Дону</button>
-											<button class="select__option" data-value="2" type="button">Москва</button>
-											<button class="select__option" data-value="3" type="button">Санкт-Петербург</button>
-										</div>
-									</div>
-								</div>
+
 							</div>
 						</div>
-						<div class="contacts-page-item">
-							<div class="contacts-page-item__label">Номер телефона</div>
-							<a class="contacts-page__text" href="tel:+78006005668">+7 800 600 56 68</a>
+						<div id="Rostov" class="city_check">
+							<div class="contacts-page-item">
+								<div class="contacts-page-item__label">Номер телефона</div>
+								<a class="contacts-page__text" href="tel:+78006005668">+7 800 600 56 68</a>
+							</div>
+							<div class="contacts-page-item">
+								<div class="contacts-page-item__label">Наша почта</div>
+								<a class="contacts-page__text" href="mailto:info@bfl.ru">info@bfl.ru</a>
+							</div>
+							<div class="contacts-page-item">
+								<div class="contacts-page-item__label">Адрес офиса</div>
+								<div class="contacts-page__text">Семашко 35/53</div>
+								<small>Пн - Пт с 9:00 до 18:00</small>
+							</div>
 						</div>
-						<div class="contacts-page-item">
-							<div class="contacts-page-item__label">Наша почта</div>
-							<a class="contacts-page__text" href="mailto:info@bfl.ru">info@bfl.ru</a>
-						</div>
-						<div class="contacts-page-item">
-							<div class="contacts-page-item__label">Адрес офиса</div>
-							<div class="contacts-page__text">ул. Жуковского д. 25, под. 5, оф. 29</div>
-							<small>Пн - Пт с 9:00 до 18:00</small>
-						</div>
+
+
+<!--						<div id="MSK" class="city_check">-->
+<!--							<div class="contacts-page-item">-->
+<!--								<div class="contacts-page-item__label">Номер телефона</div>-->
+<!--								<a class="contacts-page__text" href="tel:+78006005668">+7 800 600 56 68</a>-->
+<!--							</div>-->
+<!--							<div class="contacts-page-item">-->
+<!--								<div class="contacts-page-item__label">Наша почта</div>-->
+<!--								<a class="contacts-page__text" href="mailto:info@bfl.ru">info@bfl.ru</a>-->
+<!--							</div>-->
+<!--							<div class="contacts-page-item">-->
+<!--								<div class="contacts-page-item__label">Адрес офиса</div>-->
+<!--								<div class="contacts-page__text">ул. Жуковского д. 25, под. 5, оф. 29</div>-->
+<!--								<small>Пн - Пт с 9:00 до 18:00</small>-->
+<!--							</div>-->
+<!--						</div>-->
+
+<!--						<div id="SPB" class="city_check">-->
+<!--							<div class="contacts-page-item">-->
+<!--								<div class="contacts-page-item__label">Номер телефона</div>-->
+<!--								<a class="contacts-page__text" href="tel:+78006005668">+7 800 600 56 68</a>-->
+<!--							</div>-->
+<!--							<div class="contacts-page-item">-->
+<!--								<div class="contacts-page-item__label">Наша почта</div>-->
+<!--								<a class="contacts-page__text" href="mailto:info@bfl.ru">info@bfl.ru</a>-->
+<!--							</div>-->
+<!--							<div class="contacts-page-item">-->
+<!--								<div class="contacts-page-item__label">Адрес офиса</div>-->
+<!--								<div class="contacts-page__text">ул. Жуковского д. 25, под. 5, оф. 29</div>-->
+<!--								<small>Пн - Пт с 9:00 до 18:00</small>-->
+<!--							</div>-->
+<!--						</div>-->
 					</div>
 					<div class="contacts-page__map">
 						<div class="map map_active -ibg" data-map="1">
@@ -78,4 +100,13 @@
 			{% include 'inc/chunks/_quiz.html' %}
 
 		</main>
+
+<style>
+	.city_check{
+		width: 100%;
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+</style>
 {% endblock %}

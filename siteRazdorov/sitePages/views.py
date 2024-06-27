@@ -39,7 +39,10 @@ class ArticlePage(View):
 
     def get(self, request, slug):
         article = get_object_or_404(Article, slug=slug)
-        return render(request, self.template_name, {'article': article})
+        return render(request, self.template_name, {'article': article,
+                                                    'title': article.title_page,
+                                                    'description':article.description_page,
+                                                    'namePage': article.name_page})
 
 class ContactsPage(View):
     """ Страница 'Контакты' """

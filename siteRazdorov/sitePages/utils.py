@@ -7,7 +7,9 @@ from urllib.parse import parse_qs
 from bitrixAPI.views import DataBitrix24
 from .models import Client as ClientDB
 from bitrixAPI.utils import DataBitrix24
+import logging
 
+logger = logging.getLogger(__name__)
 
 class Client:
     def __init__(self, request: dict):
@@ -18,14 +20,14 @@ class Client:
         """ Добавляем клиента """
         data = self.treatmentData()
         pprint.pprint(data)
-        # saveDB = self.clientSaveForDB(data=data)
+        saveDB = self.clientSaveForDB(data=data)
         # addLead = self.clientSendForBitrix24(data=data)
 
     def clientSaveForDB(self, data):
         """ Сохраняем клиента в базу """
         try:
             self.clientDB.objects.create(
-                name = data['NAME'],
+                name = data['NAME1'],
                 phone = data['PHONE'][0]['VALUE'],
                 ip = data['ipClient'],
                 utm_source = data.get('UTM_SOURCE', ''),
@@ -36,9 +38,9 @@ class Client:
                 transitionSource = data.get('referSite', ''),
                 page = data.get('page', ''),
             )
-            print('Сохранил')
+            logger.info('Клиент сохранен!')
         except Exception as e:
-            print(f'Ошибка - {e}')
+            logger.critical(f'Клиент не записался в базу! Ошибка - {e}')
 
 
     def clientSendForBitrix24(self, data):

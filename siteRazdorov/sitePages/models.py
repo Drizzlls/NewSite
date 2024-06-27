@@ -7,6 +7,9 @@ class Article(models.Model):
     content = RichTextField(verbose_name='Контент статьи')
     slug = models.SlugField(null=False, unique=True)
     image = models.ImageField(upload_to='images', verbose_name='Картинка в статье')
+    title_page = models.CharField(max_length=150, verbose_name='Title страницы')
+    description_page = models.CharField(max_length=150, verbose_name='Description страницы')
+    name_page = models.CharField(max_length=150, verbose_name='Название страницы')
 
     def __str__(self):
         return self.title

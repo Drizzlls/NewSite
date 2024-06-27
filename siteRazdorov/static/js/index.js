@@ -39,6 +39,40 @@ function getNamePage(){
 }
 getNamePage()
 
-
+//function selectOffice(){
+//    let rostov = document.getElementById('RND');
+//    let msk = document.getElementById('MSK');
+//    let rostov = document.getElementById('SPB');
+//    let select = document.getElementById('city');
+//    console.log('Зашел в функцию');
+//    select.addEventListener('change', function(e) {
+//        if (select.value == '1'){
+//            console.log('Выбран Ростов');
+//            rostov.style.display = "Block";
+//            msk.style.display = "None";
+//            spb.style.display = "None";
+//
+//        }
+//        else if (select.value == '2'){
+//            msk.style.display = "Block";
+//            rostov.style.display = "None";
+//            spb.style.display = "None";
+//            console.log('Выбран МСК');
+//
+//        }
+//        else if (select.value == '3'){
+//            spb.style.display = "Block";
+//            msk.style.display = "None";
+//            rostov.style.display = "None";
+//            console.log('Выбран СПБ');
+//        }
+//        else{
+//        console.log('елсе');
+//        }
+//
+//	}
+//}
+//
+//selectOffice()
 
 })();
