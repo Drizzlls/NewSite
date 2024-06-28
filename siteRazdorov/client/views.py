@@ -14,7 +14,7 @@ class Client(CRMBitrix24,SaveDB):
         """ Добавляем клиента """
         data = self.treatmentData()
         pprint.pprint(data)
-        saveDB = self.clientSaveForDB(data=data)
+        # saveDB = self.clientSaveForDB(data=data)
         addBitrix24 = self.sendLeadBitrix24(data=data)
 
 

@@ -1,10 +1,12 @@
 from bitrix24 import Bitrix24
 import logging
+from integrations.models import IntegrationsHook
 
-logger = logging.getLogger(__name__)
+logger = logging.getLogger('site')
 class CRMBitrix24():
-    __BX24 = Bitrix24('https://novoedelo.bitrix24.ru/rest/24/fhrx35sn7urhp0gj/')
+    __BX24 = Bitrix24(IntegrationsHook.objects.get(title__title='Битрикс24').hook)
     __STATUS_ID = 'UC_UR5RJI'
+
     def sendLeadBitrix24(self, data):
         try:
             send = self.__BX24.callMethod('crm.lead.add', fields={

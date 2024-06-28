@@ -1,6 +1,0 @@
-CRITICAL-2024-06-28 10:40:27,418-crm.systems.crm_bitrix24-sendData(17)-Данные в Битрикс24 не отправлены! Ошибка - HTTP error: 401
-CRITICAL-2024-06-28 10:43:10,236-crm.systems.crm_bitrix24-sendData(17)-Данные в Битрикс24 не отправлены! Ошибка - HTTP error: 401
-CRITICAL-2024-06-28 10:43:47,565-crm.systems.crm_bitrix24-sendData(17)-Данные в Битрикс24 не отправлены! Ошибка - HTTP error: 401
-CRITICAL-2024-06-28 10:44:03,647-crm.systems.crm_bitrix24-sendData(17)-Данные в Битрикс24 не отправлены! Ошибка - HTTP error: 401
-CRITICAL-2024-06-28 10:55:24,995-sitePages.client-clientSaveForDB(25)-Клиент не записался в базу! Ошибка - 'NAME1'
-CRITICAL-2024-06-28 10:58:38,890-crm.systems.crm_bitrix24-sendData(17)-Данные в Битрикс24 не отправлены! Ошибка - HTTP error: 401

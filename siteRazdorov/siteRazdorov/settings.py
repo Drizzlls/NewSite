@@ -124,10 +124,8 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-
 CKEDITOR_UPLOAD_PATH = "uploads/"
 CKEDITOR_BASEPATH = "/static/ckeditor/ckeditor/"
-
 
 LOGGING = {
     'version': 1,
@@ -138,7 +136,7 @@ LOGGING = {
             'style': '{'
         },
         'file': {
-            'format': '{levelname}-{asctime}-{name}-{funcName}({lineno})-{message}',
+            'format': '{asctime}:<{levelname}> {name}-{funcName}({lineno}) - {message}',
             'style': '{'
         },
 
@@ -155,13 +153,19 @@ LOGGING = {
             'formatter': 'file',
             'filename': 'logs.log'
         },
+        'telegram': {
+            'level': 'ERROR',
+            'class': 'siteRazdorov.customLogging.TelegramBotHandler',
+        }
 
     },
     'loggers': {
-        '': {
-            'level': 'DEBUG',
-            'handlers': ['console', 'file'],
+        'site': {
+            'level': 'INFO',
+            'handlers': ['console', 'file', 'telegram'],
             'propagate': True,
-        }
+        },
     }
 }
+
+

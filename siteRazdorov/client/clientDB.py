@@ -1,7 +1,7 @@
 from client.models import Client as ClientDB
 import logging
 
-logger = logging.getLogger(__name__)
+logger = logging.getLogger('site')
 
 class SaveDB:
     clientDB = ClientDB

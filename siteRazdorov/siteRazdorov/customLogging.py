@@ -1,10 +1,11 @@
 import logging
+import requests
 
 
-
-
-class TelegramHandler(logging.Handler):
+class TelegramBotHandler(logging.Handler):
 
     def emit(self, record):
-        log_entry = self.format(record)
-        print('я вошел в свой логгер!', log_entry)
+        text = f'Время — {record.asctime}\nТип проблемы — {record.levelname}\nФункция — {record.funcName}({record.lineno})\nПроблема — {record.message}'
+        req = requests.get(f'https://api.telegram.org/bot7354303530:AAFXOhnoXVHLZZ038lH-pM9WZO9MosuKJeU/sendMessage?chat_id=272635960&text={text}')
+
+
