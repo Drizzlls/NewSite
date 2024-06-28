@@ -1,11 +1,6 @@
-CRITICAL 2024-06-27 16:32:43,610 utils Клиент не записался в базу! Ошибка - 'NAME1'
-ERROR 2024-06-27 16:32:43,611 utils Клиент не записался в базу! Ошибка - 'NAME1'
-utils.py CRITICAL 2024-06-27 16:35:18,796 utils Клиент не записался в базу! Ошибка - 'NAME1'
-utils.py clientSaveForDB 43 CRITICAL 2024-06-27 16:35:59,517 utils Клиент не записался в базу! Ошибка - 'NAME1'
-CRITICAL 2024-06-27 16:36:30,337 utils.py clientSaveForDB 43  utils Клиент не записался в базу! Ошибка - 'NAME1'
-CRITICAL 2024-06-27 16:37:11,417 utils.py/clientSaveForDB-43 Клиент не записался в базу! Ошибка - 'NAME1'
-sitePages.utils CRITICAL 2024-06-27 16:37:46,757 utils.py/clientSaveForDB-43 Клиент не записался в базу! Ошибка - 'NAME1'
- CRITICAL 2024-06-27 16:38:05,529 sitePages.utils/clientSaveForDB-43 Клиент не записался в базу! Ошибка - 'NAME1'
- CRITICAL 2024-06-27 16:38:25,426 sitePages.utils-clientSaveForDB(43) Клиент не записался в базу! Ошибка - 'NAME1'
-CRITICAL 2024-06-27 16:38:55,860 sitePages.utils-clientSaveForDB(43) Клиент не записался в базу! Ошибка - 'NAME1'
-CRITICAL-2024-06-27 16:59:17,778-sitePages.utils-clientSaveForDB(43)-Клиент не записался в базу! Ошибка - 'NAME1'
+CRITICAL-2024-06-28 10:40:27,418-crm.systems.crm_bitrix24-sendData(17)-Данные в Битрикс24 не отправлены! Ошибка - HTTP error: 401
+CRITICAL-2024-06-28 10:43:10,236-crm.systems.crm_bitrix24-sendData(17)-Данные в Битрикс24 не отправлены! Ошибка - HTTP error: 401
+CRITICAL-2024-06-28 10:43:47,565-crm.systems.crm_bitrix24-sendData(17)-Данные в Битрикс24 не отправлены! Ошибка - HTTP error: 401
+CRITICAL-2024-06-28 10:44:03,647-crm.systems.crm_bitrix24-sendData(17)-Данные в Битрикс24 не отправлены! Ошибка - HTTP error: 401
+CRITICAL-2024-06-28 10:55:24,995-sitePages.client-clientSaveForDB(25)-Клиент не записался в базу! Ошибка - 'NAME1'
+CRITICAL-2024-06-28 10:58:38,890-crm.systems.crm_bitrix24-sendData(17)-Данные в Битрикс24 не отправлены! Ошибка - HTTP error: 401

@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class BitrixapiConfig(AppConfig):
+class ClientConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'bitrixAPI'
+    name = 'client'

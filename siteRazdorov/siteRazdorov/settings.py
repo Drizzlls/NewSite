@@ -34,8 +34,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'sitePages.apps.SitepagesConfig',
-    'bitrixAPI.apps.BitrixapiConfig',
+    'integrations.apps.IntegrationsConfig',
+    'client.apps.ClientConfig',
     'ckeditor',
+
 ]
 
 MIDDLEWARE = [

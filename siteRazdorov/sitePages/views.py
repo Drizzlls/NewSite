@@ -1,16 +1,15 @@
 from django.http import HttpResponse
-from django.shortcuts import render, redirect, get_object_or_404
+from django.shortcuts import render, get_object_or_404
 from django.views import View
-from bitrixAPI.views import DataBitrix24
 from .models import Article
-from .utils import Client
+from client.views import Client
 
 
 class IndexPage(View):
     """ Главная страница """
     template_name = 'pages/index.html'
     context = {
-        'namePage':'Главная страница'
+        'namePage': 'Главная страница'
     }
 
     def get(self, request):
@@ -120,7 +119,7 @@ def notFoundPage(request, *args, **kwargs):
 
 
 class FormHandler(View):
-        """ UC_UR5RJI """
+
         def post(self, request):
             client = Client(request=request)
             client.clientAdd()
