@@ -1,18 +1,15 @@
 from django.urls import path, include
 from django.views.generic import TemplateView
 from django.contrib.auth import views, urls
-
 from django.conf import settings
 from django.conf.urls.static import static
 
-from .views import IndexPage, AboutPage, ArticlesPage,ContactsPage, CooperationPage, ReviewsPage, CasesPage, FAQPage, CalcPage, SalePage, VacanciesPage, ArticlePage, FormHandler, ThanksPage
+from .views import IndexPage, AboutPage,ContactsPage, CooperationPage, ReviewsPage, CasesPage, FAQPage, CalcPage, SalePage, VacanciesPage, FormHandler, ThanksPage
 
 urlpatterns = [
     path('', IndexPage.as_view(), name='index'),
     path('about/', AboutPage.as_view(), name='about'),
-
-    path('articles/', ArticlesPage.as_view(), name='articles'),
-    path('articles/<str:slug>/', ArticlePage.as_view(), name='article'),
+    path('articles/', include('articles.urls')),
 
     path('contacts/', ContactsPage.as_view(), name='contacts'),
     path('cooperation/', CooperationPage.as_view(), name='cooperation'),

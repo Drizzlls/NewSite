@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'sitePages.apps.SitepagesConfig',
     'integrations.apps.IntegrationsConfig',
     'client.apps.ClientConfig',
+    'articles.apps.ArticlesConfig',
     'ckeditor',
 
 ]

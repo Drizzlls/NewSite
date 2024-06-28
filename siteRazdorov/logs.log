@@ -1,1 +1,2 @@
 2024-06-28 16:25:31,276:<CRITICAL> site-sendLeadBitrix24(19) - Данные в Битрикс24 не отправлены! Ошибка - HTTP error: 401
+2024-06-28 16:37:15,515:<CRITICAL> site-sendLeadBitrix24(19) - Данные в Битрикс24 не отправлены! Ошибка - HTTP error: 401
