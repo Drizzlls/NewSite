@@ -11,7 +11,7 @@ class SaveDB:
             self.clientDB.objects.create(
                 name=data['NAME'],
                 phone=data['PHONE'][0]['VALUE'],
-                ip=data['ipClient'],
+                ip=data.get('ipClient', ''),
                 utm_source=data.get('UTM_SOURCE', ''),
                 utm_medium=data.get('UTM_MEDIUM', ''),
                 utm_campaign=data.get('UTM_CAMPAIGN', ''),

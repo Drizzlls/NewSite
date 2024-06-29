@@ -3,7 +3,7 @@ from django.db import models
 class Client(models.Model):
     name = models.CharField(max_length=100, null=False, verbose_name='ФИО')
     phone = models.CharField(max_length=20, null=False, verbose_name='Номер телефона')
-    ip = models.CharField(max_length=20, null=False, verbose_name='IP')
+    ip = models.CharField(max_length=20, null=True, verbose_name='IP')
     utm_source = models.CharField(max_length=20, null=True, blank=True, verbose_name='utm_source')
     utm_medium = models.CharField(max_length=20, null=True, blank=True, verbose_name='utm_medium')
     utm_campaign = models.CharField(max_length=20, null=True, blank=True, verbose_name='utm_campaign')

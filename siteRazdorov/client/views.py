@@ -6,16 +6,16 @@ from urllib import parse
 from urllib.parse import parse_qs
 
 
-class Client(CRMBitrix24,SaveDB):
+class Client(SaveDB):
     def __init__(self, request: dict):
         self.request = request
+        self.bitrix24 = CRMBitrix24()
 
     def clientAdd(self):
         """ Добавляем клиента """
         data = self.treatmentData()
-        pprint.pprint(data)
-        # saveDB = self.clientSaveForDB(data=data)
-        addBitrix24 = self.sendLeadBitrix24(data=data)
+        saveDB = self.clientSaveForDB(data=data)
+        addBitrix24 = self.bitrix24.sendLeadBitrix24(data=data)
 
 
     def treatmentData(self) -> dict:

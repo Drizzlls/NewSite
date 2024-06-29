@@ -1,2 +1,17 @@
 2024-06-28 16:25:31,276:<CRITICAL> site-sendLeadBitrix24(19) - Данные в Битрикс24 не отправлены! Ошибка - HTTP error: 401
 2024-06-28 16:37:15,515:<CRITICAL> site-sendLeadBitrix24(19) - Данные в Битрикс24 не отправлены! Ошибка - HTTP error: 401
+2024-06-29 12:26:29,401:<CRITICAL> site-sendLeadBitrix24(21) - Данные в Битрикс24 не отправлены! Ошибка - HTTP error: 401
+2024-06-29 12:27:47,870:<CRITICAL> site-sendLeadBitrix24(20) - Данные в Битрикс24 не отправлены! Ошибка - HTTP error: 401
+2024-06-29 12:28:19,288:<CRITICAL> site-sendLeadBitrix24(20) - Данные в Битрикс24 не отправлены! Ошибка - HTTP error: 401
+2024-06-29 12:28:37,665:<CRITICAL> site-sendLeadBitrix24(20) - Данные в Битрикс24 не отправлены! Ошибка - HTTP error: 401
+2024-06-29 12:34:37,408:<CRITICAL> site-sendLeadBitrix24(21) - Данные в Битрикс24 не отправлены! Ошибка - HTTP error: 401
+2024-06-29 12:38:19,619:<CRITICAL> site-sendLeadBitrix24(23) - Данные в Битрикс24 не отправлены! Ошибка - 'Client' object has no attribute '_CRMBitrix24__BX24'
+2024-06-29 12:38:32,588:<CRITICAL> site-sendLeadBitrix24(23) - Данные в Битрикс24 не отправлены! Ошибка - 'Client' object has no attribute '_CRMBitrix24__BX24'
+2024-06-29 12:40:27,440:<CRITICAL> site-sendLeadBitrix24(23) - Данные в Битрикс24 не отправлены! Ошибка - 'Client' object has no attribute 'bx24'
+2024-06-29 12:40:27,728:<CRITICAL> site-sendLeadBitrix24(23) - Данные в Битрикс24 не отправлены! Ошибка - 'Client' object has no attribute 'bx24'
+2024-06-29 12:43:31,281:<CRITICAL> site-sendLeadBitrix24(24) - Данные в Битрикс24 не отправлены! Ошибка - 'Client' object has no attribute 'bx24'
+2024-06-29 12:48:15,651:<CRITICAL> site-sendLeadBitrix24(24) - Данные в Битрикс24 не отправлены! Ошибка - HTTP error: 401
+2024-06-29 12:49:04,040:<CRITICAL> site-sendLeadBitrix24(25) - Данные в Битрикс24 не отправлены! Ошибка - HTTP error: 401
+2024-06-29 12:49:18,687:<CRITICAL> site-sendLeadBitrix24(25) - Данные в Битрикс24 не отправлены! Ошибка - HTTP error: 401
+2024-06-29 12:49:33,953:<CRITICAL> site-sendLeadBitrix24(25) - Данные в Битрикс24 не отправлены! Ошибка - HTTP error: 401
+2024-06-29 13:01:51,522:<CRITICAL> site-sendLeadBitrix24(24) - Данные в Битрикс24 не отправлены! Ошибка - HTTP error: 401

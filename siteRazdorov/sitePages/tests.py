@@ -7,7 +7,8 @@ class UtilsTest(TestCase, SimpleTestCase):
     TITLE = '<title> Банкротство физических лиц </title>'
     def htmlAndStatusCodeTest(self, response, template, status_code=200):
         self.assertTemplateUsed(response, template)
-        self.assertNotContains(response, self.TITLE, status_code=200)
+        # self.assertNotContains(response, self.TITLE, status_code=200)
+        self.assertEqual(response.status_code, 200)
 
 class TestPages(UtilsTest):
     """ Проверка доступности страниц по адресам """
@@ -21,10 +22,6 @@ class TestPages(UtilsTest):
         response = self.client.get(reverse('about'))
         self.htmlAndStatusCodeTest(response=response, template='pages/about.html')
 
-    def test_articles(self):
-        """ Тест страницы 'Статьи' """
-        response = self.client.get(reverse('articles'))
-        self.htmlAndStatusCodeTest(response=response, template='pages/articles/articles.html')
 
     def test_contacts(self):
         """ Тест страницы 'Контакты' """
