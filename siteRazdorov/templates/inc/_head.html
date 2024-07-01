@@ -2,7 +2,7 @@
 <meta charset="UTF-8">
 <title>{% if title %} {{ title }} {% elif namePage %} {{namePage}} {% else %} Банкротство физических лиц {% endif %}</title>
 {% if description %}<meta name="description" content="{{ description }}">{% else %}<meta name="description" content="Банкротство физических лиц">{% endif %}
-{% if namePage %}<input type="hidden" id="namePage" value="{{ namePage }}">{% elif title %}<input type="hidden" id="namePage" value="{{ title }}">{% else %}<input type="hidden" id="namePage" value="None">{% endif %}
 <link rel="stylesheet" href="{% static 'css/style.min.css' %}">
-<link rel="shortcut icon" type="image/png" href="{% static 'img/favicon.ico' %}"/>
+<link rel="icon" href="{% static 'favicon.ico' %}" type="image/x-icon" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% if namePage %}<input type="hidden" id="namePage" value="{{ namePage }}">{% elif title %}<input type="hidden" id="namePage" value="{{ title }}">{% else %}<input type="hidden" id="namePage" value="None">{% endif %}
